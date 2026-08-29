@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0d1713" />
+    <meta name="description" content="Grow a distinct procedural plant from four environmental conditions." />
+    <title>The Algorithmic Terrarium</title>
+  </head>
+  <body>
+    <!--
+      THESIS: Make a plant feel like a live specimen inside a nocturnal field station, not a generic dashboard.
+      OWN-WORLD: Matte ink surfaces, measurement marks, lichen/mint highlights, amber seed accents, and instrument readouts.
+      STORY: Read the environment, adjust an instrument, grow a seeded specimen, and understand its broad traits.
+      FIRST VIEWPORT: Large growth chamber on the left, slim control rail on the right, primary Grow plant action in the rail.
+      FORM: Field-station instrument panel, assigned grounded candidate 3, direction seed 5ac0f6fa.
+      FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance
+    -->
+    <div id="app" class="page-shell">
+      <header class="masthead" aria-labelledby="page-title">
+        <div>
+          <p class="eyebrow">LOCAL GROWTH STUDY · 001</p>
+          <h1 id="page-title">The Algorithmic Terrarium</h1>
+          <p class="masthead-copy">Change the atmosphere. Grow what it becomes.</p>
+        </div>
+        <p class="local-note">No cloud storage<br /><span>seeded output</span></p>
+      </header>
+
+      <main class="app-shell" aria-label="Terrarium dashboard">
+        <section class="growth-chamber" aria-labelledby="chamber-title">
+          <div class="chamber-frame">
+            <div class="chamber-header">
+              <div>
+                <p class="eyebrow">GROWTH CHAMBER</p>
+                <h2 id="chamber-title">Current specimen</h2>
+              </div>
+              <span class="status-tag" data-status="ready">ready</span>
+            </div>
+            <div class="canvas-wrap">
+              <canvas id="plant-canvas" width="640" height="640" role="img">
+                A procedural plant will appear here. Read the plant reading below for a text description of the current specimen.
+              </canvas>
+              <span class="axis-mark axis-mark-top" aria-hidden="true"></span>
+              <span class="axis-mark axis-mark-bottom" aria-hidden="true"></span>
+              <span class="axis-mark axis-mark-left" aria-hidden="true"></span>
+            </div>
+            <div class="chamber-footer">
+              <span class="mono-label">SPECIMEN / CURRENT GROWTH</span>
+              <span class="mono-label">MODEL / SEEDED BRANCHING</span>
+            </div>
+          </div>
+        </section>
+
+        <aside class="control-rail" aria-labelledby="controls-title">
+          <div class="rail-heading">
+            <p class="eyebrow">ENVIRONMENT</p>
+            <h2 id="controls-title">Set the conditions</h2>
+            <p>Adjust the atmosphere, then grow a new specimen when you are ready.</p>
+          </div>
+
+          <form class="environment-controls" aria-label="Environmental controls">
+            <div class="environment-control">
+              <div class="control-label-row">
+                <label for="humidity">Humidity</label>
+                <output id="humidity-value" for="humidity">55%</output>
+              </div>
+              <input id="humidity" name="humidity" type="range" min="0" max="100" step="1" value="55" />
+              <div class="range-hints" aria-hidden="true"><span>dry</span><span>wet</span></div>
+            </div>
+
+            <div class="environment-control">
+              <div class="control-label-row">
+                <label for="sunlight">Sunlight hours</label>
+                <output id="sunlight-value" for="sunlight">12 h</output>
+              </div>
+              <input id="sunlight" name="sunlight" type="range" min="0" max="24" step="1" value="12" />
+              <div class="range-hints" aria-hidden="true"><span>0 h</span><span>24 h</span></div>
+            </div>
+
+            <div class="environment-control">
+              <div class="control-label-row">
+                <label for="acidity">Soil acidity</label>
+                <output id="acidity-value" for="acidity">pH 6.5</output>
+              </div>
+              <input id="acidity" name="acidity" type="range" min="3" max="9" step="0.1" value="6.5" />
+              <div class="range-hints" aria-hidden="true"><span>acidic</span><span>alkaline</span></div>
+            </div>
+
+            <div class="environment-control">
+              <div class="control-label-row">
+                <label for="gravity">Gravity</label>
+                <output id="gravity-value" for="gravity">1.0 g</output>
+              </div>
+              <input id="gravity" name="gravity" type="range" min="0.2" max="2" step="0.1" value="1" />
+              <div class="range-hints" aria-hidden="true"><span>light</span><span>heavy</span></div>
+            </div>
+          </form>
+
+          <div class="action-block">
+            <button class="primary-action" type="button" data-action="grow">Grow plant <span aria-hidden="true">↗</span></button>
+            <button class="secondary-action" type="button" data-action="reset">Reset defaults</button>
+            <p id="status-message" class="status-message" aria-live="polite" aria-atomic="true" data-tone="ready">Ready to grow a new specimen.</p>
+          </div>
+
+          <section class="plant-reading" aria-labelledby="reading-title">
+            <div class="reading-heading">
+              <p class="eyebrow">PLANT READING</p>
+              <h2 id="reading-title" data-reading="title">Awaiting first growth</h2>
+            </div>
+            <p class="reading-copy" data-reading="copy">The generated plant’s height, branching, leaf density, and lean will be described here.</p>
+            <p class="reading-environment" data-reading="environment">Environment values will appear after the first growth.</p>
+            <dl class="reading-list">
+              <div><dt>Height</dt><dd data-reading="height">—</dd></div>
+              <div><dt>Branching</dt><dd data-reading="branching">—</dd></div>
+              <div><dt>Leaf density</dt><dd data-reading="leafDensity">—</dd></div>
+              <div><dt>Lean</dt><dd data-reading="lean">—</dd></div>
+            </dl>
+          </section>
+        </aside>
+      </main>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
