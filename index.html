@@ -53,6 +53,18 @@
           </div>
         </section>
 
+        <!--
+          DOM order is the mobile order: the action keys (Grow/Reset/status) sit
+          directly under the chamber so the grow-in is in view at the tap and tab
+          order reaches the action first. Wide layouts fuse them to the rail
+          column's foot via grid rows with no row gap.
+        -->
+        <div class="action-block">
+          <button class="primary-action" type="button" data-action="grow">Grow plant <span aria-hidden="true">↗</span></button>
+          <button class="secondary-action" type="button" data-action="reset">Reset defaults</button>
+          <p id="status-message" class="status-message" aria-live="polite" aria-atomic="true" data-tone="ready">Ready to grow a new specimen.</p>
+        </div>
+
         <section class="plant-reading" aria-labelledby="reading-title" aria-live="polite" aria-atomic="true">
           <div class="reading-intro">
             <p class="eyebrow">PLANT READING</p>
@@ -114,12 +126,6 @@
               <div class="range-hints" aria-hidden="true"><span>light</span><span>heavy</span></div>
             </div>
           </form>
-
-          <div class="action-block">
-            <button class="primary-action" type="button" data-action="grow">Grow plant <span aria-hidden="true">↗</span></button>
-            <button class="secondary-action" type="button" data-action="reset">Reset defaults</button>
-            <p id="status-message" class="status-message" aria-live="polite" aria-atomic="true" data-tone="ready">Ready to grow a new specimen.</p>
-          </div>
         </aside>
       </main>
     </div>

@@ -1,7 +1,7 @@
 import "./styles.css";
-import { APP_TITLE, getViewportOverlapRatio } from "./app-shell.ts";
+import { APP_TITLE } from "./app-shell.ts";
 import { generatePlant, type Environment, type Plant } from "./generator.ts";
-import { createPlantCanvasRenderer, prefersReducedMotion } from "./plant-canvas.ts";
+import { createPlantCanvasRenderer } from "./plant-canvas.ts";
 import {
   CONTROL_KEYS,
   DEFAULT_ENVIRONMENT,
@@ -133,30 +133,6 @@ function updateSpecimenSeed(seed: number): void {
   specimenSeedLabel.textContent = `SPECIMEN / ${formatSpecimenSeed(seed)}`;
 }
 
-// On the single-column layout the action and its consequence are vertically
-// separated, so the viewport follows the growth; on the two-column layout they
-// sit side by side and the viewport stays with the user's point of action.
-const SINGLE_COLUMN_LAYOUT = "(max-width: 760px)";
-
-function bringChamberIntoView(): void {
-  if (!window.matchMedia(SINGLE_COLUMN_LAYOUT).matches) {
-    return;
-  }
-
-  const rect = canvas.getBoundingClientRect();
-  const viewportHeight =
-    window.innerHeight || document.documentElement.clientHeight;
-
-  if (getViewportOverlapRatio(rect.top, rect.bottom, viewportHeight) >= 0.5) {
-    return;
-  }
-
-  canvas.scrollIntoView({
-    behavior: prefersReducedMotion(window) ? "auto" : "smooth",
-    block: "center",
-  });
-}
-
 applyEnvironment(DEFAULT_ENVIRONMENT);
 updateReading(DEFAULT_ENVIRONMENT, currentPlant);
 updateSpecimenSeed(currentSeed);
@@ -175,7 +151,6 @@ function renderNextPlant(
     specimenHistory = rememberSpecimen(specimenHistory, currentPlant);
     renderer.setGhosts(specimenHistory);
     renderer.growPlant(nextPlant);
-    bringChamberIntoView();
     currentSeed = seed;
     currentPlant = nextPlant;
     updateSpecimenSeed(seed);
@@ -210,10 +185,7 @@ growButton.addEventListener("click", () => {
     "New specimen grown from the current environment.",
     "grown",
   );
-  // The render may have moved the viewport to the chamber; restoring focus
-  // (dropped to the body while the buttons were briefly disabled) must not
-  // scroll back to the action.
-  growButton.focus({ preventScroll: true });
+  growButton.focus();
 });
 
 resetButton.addEventListener("click", () => {
@@ -225,5 +197,5 @@ resetButton.addEventListener("click", () => {
   );
 
   if (didReset) applyEnvironment(DEFAULT_ENVIRONMENT);
-  resetButton.focus({ preventScroll: true });
+  resetButton.focus();
 });

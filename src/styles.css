@@ -157,8 +157,12 @@ input:focus-visible {
   grid-template-columns: minmax(0, 1.34fr) minmax(320px, 0.86fr);
   grid-template-areas:
     "chamber rail"
+    "chamber actions"
     "reading reading";
-  gap: var(--space-4);
+  /* No row gap: the rail panel and the action keys fuse into one column. The
+     reading strip carries the horizontal rhythm below them instead. */
+  column-gap: var(--space-4);
+  row-gap: 0;
   align-items: stretch;
 }
 
@@ -170,10 +174,23 @@ input:focus-visible {
 
 .plant-reading {
   grid-area: reading;
+  margin-top: var(--space-4);
 }
 
 .control-rail {
   grid-area: rail;
+  border-bottom: none;
+  border-radius: var(--radius-frame) var(--radius-frame) 0 0;
+}
+
+.action-block {
+  grid-area: actions;
+  display: grid;
+  gap: 10px;
+  padding: var(--space-5);
+  border: 1px solid var(--line);
+  border-radius: 0 0 var(--radius-frame) var(--radius-frame);
+  background: rgba(16, 29, 23, 0.82);
 }
 
 .chamber-frame,
@@ -305,8 +322,7 @@ input:focus-visible {
 }
 
 .rail-heading,
-.environment-controls,
-.action-block {
+.environment-controls {
   padding: var(--space-5);
 }
 
@@ -507,7 +523,11 @@ input[type="range"] {
 
   .app-shell {
     grid-template-columns: minmax(0, 1.08fr) minmax(280px, 0.92fr);
-    gap: var(--space-3);
+    column-gap: var(--space-3);
+  }
+
+  .plant-reading {
+    margin-top: var(--space-3);
   }
 
   .chamber-header,
@@ -558,9 +578,26 @@ input[type="range"] {
     grid-template-columns: minmax(0, 1fr);
     grid-template-areas:
       "chamber"
+      "actions"
       "reading"
       "rail";
-    gap: var(--space-3);
+    row-gap: var(--space-3);
+  }
+
+  /* The action keys are their own panel directly under the chamber — tap Grow
+     with the grow-in already in view — and the rail keeps the controls as the
+     final group. */
+  .action-block {
+    border-radius: var(--radius-frame);
+  }
+
+  .control-rail {
+    border-bottom: 1px solid var(--line);
+    border-radius: var(--radius-frame);
+  }
+
+  .plant-reading {
+    margin-top: 0;
   }
 
   .plant-reading {
