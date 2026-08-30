@@ -24,7 +24,7 @@ The visitor reads the environment, adjusts an instrument, presses Grow plant, an
 
 On desktop, the first viewport is a two-part instrument panel: a large growth chamber on the left containing the plant and a slim control rail on the right. A compact masthead names the terrarium and explains the loop in one line. The primary Grow plant button stays in the control rail’s action block, visually connected to the controls rather than floating in a generic hero. The plant occupies most of the available height and remains the first visual read.
 
-On mobile, the growth chamber comes first at a stable, generous height, followed by the control rail and a full-width action row. The report sits immediately below the chamber or at the end of the rail depending on available height; it never displaces the controls offscreen without a clear scroll path.
+On mobile, the growth chamber comes first at a stable, generous height, followed by the plant reading strip and then the control rail, whose action block keeps Grow adjacent to the sliders it consumes. Because the action sits at the page's end and its consequence sits at the top, a growth that starts while the chamber is less than half visible brings the chamber into view (smoothly; instantly under reduced motion) so the witnessed grow-in is never missed. The reading follows the chamber so the post-grow report is the first thing after the animation, and the controls keep a clear scroll path.
 
 ### Form
 
