@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#0d1713" />
+    <meta name="theme-color" content="#0b1410" />
     <meta name="description" content="Grow a distinct procedural plant from four environmental conditions." />
     <title>The Algorithmic Terrarium</title>
   </head>
@@ -13,6 +13,7 @@
       OWN-WORLD: Matte ink surfaces, measurement marks, lichen/mint highlights, amber seed accents, and instrument readouts.
       STORY: Read the environment, adjust an instrument, grow a seeded specimen, and understand its broad traits.
       FIRST VIEWPORT: Large growth chamber on the left, slim control rail on the right, primary Grow plant action in the rail.
+      The plant reading is the instrument's log: a full-width strip below both columns on desktop, directly under the chamber on mobile.
       FORM: Field-station instrument panel, assigned grounded candidate 3, direction seed 5ac0f6fa.
       FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance
     -->
@@ -43,11 +44,29 @@
               <span class="axis-mark axis-mark-top" aria-hidden="true"></span>
               <span class="axis-mark axis-mark-bottom" aria-hidden="true"></span>
               <span class="axis-mark axis-mark-left" aria-hidden="true"></span>
+              <span class="axis-mark axis-mark-right" aria-hidden="true"></span>
             </div>
             <div class="chamber-footer">
-              <span class="mono-label">SPECIMEN / CURRENT GROWTH</span>
+              <span class="mono-label" data-specimen="seed">SPECIMEN / #5EED1234</span>
               <span class="mono-label">MODEL / SEEDED BRANCHING</span>
             </div>
+          </div>
+        </section>
+
+        <section class="plant-reading" aria-labelledby="reading-title">
+          <div class="reading-intro">
+            <p class="eyebrow">PLANT READING</p>
+            <h2 id="reading-title" data-reading="title">Awaiting first growth</h2>
+            <p class="reading-copy" data-reading="copy">The generated plant’s height, branching, leaf density, and lean will be described here.</p>
+          </div>
+          <div class="reading-data">
+            <p class="reading-environment" data-reading="environment">Environment values will appear after the first growth.</p>
+            <dl class="reading-list">
+              <div><dt>Height</dt><dd data-reading="height">—</dd></div>
+              <div><dt>Branching</dt><dd data-reading="branching">—</dd></div>
+              <div><dt>Leaf density</dt><dd data-reading="leafDensity">—</dd></div>
+              <div><dt>Lean</dt><dd data-reading="lean">—</dd></div>
+            </dl>
           </div>
         </section>
 
@@ -101,21 +120,6 @@
             <button class="secondary-action" type="button" data-action="reset">Reset defaults</button>
             <p id="status-message" class="status-message" aria-live="polite" aria-atomic="true" data-tone="ready">Ready to grow a new specimen.</p>
           </div>
-
-          <section class="plant-reading" aria-labelledby="reading-title">
-            <div class="reading-heading">
-              <p class="eyebrow">PLANT READING</p>
-              <h2 id="reading-title" data-reading="title">Awaiting first growth</h2>
-            </div>
-            <p class="reading-copy" data-reading="copy">The generated plant’s height, branching, leaf density, and lean will be described here.</p>
-            <p class="reading-environment" data-reading="environment">Environment values will appear after the first growth.</p>
-            <dl class="reading-list">
-              <div><dt>Height</dt><dd data-reading="height">—</dd></div>
-              <div><dt>Branching</dt><dd data-reading="branching">—</dd></div>
-              <div><dt>Leaf density</dt><dd data-reading="leafDensity">—</dd></div>
-              <div><dt>Lean</dt><dd data-reading="lean">—</dd></div>
-            </dl>
-          </section>
         </aside>
       </main>
     </div>

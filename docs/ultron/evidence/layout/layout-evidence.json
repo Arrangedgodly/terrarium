@@ -1,0 +1,125 @@
+{
+  "desktop1440": {
+    "viewport": "1440x900",
+    "chamber": {
+      "h": 908,
+      "bottom": 1197
+    },
+    "rail": {
+      "h": 908,
+      "bottom": 1197
+    },
+    "deadUnderChamber": 0,
+    "reading": {
+      "h": 164,
+      "top": 1221,
+      "bottom": 1386
+    },
+    "readingFollowsChamber": 24,
+    "wrapH": 752,
+    "apertureH": 586,
+    "pageH": 1442,
+    "growButtonTop": 1029,
+    "postGrow": {
+      "viewport": "1440x900",
+      "chamber": {
+        "h": 912,
+        "bottom": 1201
+      },
+      "rail": {
+        "h": 912,
+        "bottom": 1201
+      },
+      "deadUnderChamber": 0,
+      "reading": {
+        "h": 164,
+        "top": 1225,
+        "bottom": 1390
+      },
+      "readingFollowsChamber": 570,
+      "wrapH": 756,
+      "apertureH": 586,
+      "pageH": 1446,
+      "growButtonTop": 1032
+    }
+  },
+  "laptop1024": {
+    "viewport": "1024x768",
+    "chamber": {
+      "h": 902,
+      "bottom": 1152
+    },
+    "rail": {
+      "h": 902,
+      "bottom": 1152
+    },
+    "deadUnderChamber": 0,
+    "reading": {
+      "h": 181,
+      "top": 1176,
+      "bottom": 1357
+    },
+    "readingFollowsChamber": 24,
+    "wrapH": 752,
+    "apertureH": 451,
+    "pageH": 1413,
+    "growButtonTop": 984
+  },
+  "mid800": {
+    "viewport": "800x900",
+    "chamber": {
+      "h": 854,
+      "bottom": 1071
+    },
+    "rail": {
+      "h": 854,
+      "bottom": 1071
+    },
+    "deadUnderChamber": 0,
+    "reading": {
+      "h": 181,
+      "top": 1087,
+      "bottom": 1268
+    },
+    "readingFollowsChamber": 16,
+    "wrapH": 704,
+    "apertureH": 312,
+    "pageH": 1324,
+    "growButtonTop": 911
+  },
+  "mobile390": {
+    "viewport": "390x844",
+    "chamber": {
+      "h": 470,
+      "bottom": 796
+    },
+    "rail": {
+      "h": 854,
+      "bottom": 2030
+    },
+    "deadUnderChamber": 1235,
+    "reading": {
+      "h": 348,
+      "top": 812,
+      "bottom": 1160
+    },
+    "readingFollowsChamber": 16,
+    "wrapH": 320,
+    "apertureH": 306,
+    "pageH": 2086,
+    "growButtonTop": 1870,
+    "postGrowAtButton": {
+      "scrollY": 1246,
+      "readingTopInViewport": -434,
+      "readingBottomInViewport": -86,
+      "pxFromViewportTopToReadingBottom": 86,
+      "statusVisible": true
+    },
+    "postGrowReadingScrolled": {
+      "scrollY": 812,
+      "readingFullyVisible": false,
+      "readingTopInViewport": 0,
+      "chamberBottomInViewport": -16
+    }
+  }
+}

@@ -1,0 +1,139 @@
+{
+  "appUrl": "http://127.0.0.1:5198/",
+  "failures": [],
+  "steps": {
+    "a_initial": {
+      "seedLabel": "SPECIMEN / #5EED1234",
+      "liveSeed": "1592594996",
+      "ghostCount": 0,
+      "ghostSeeds": ""
+    },
+    "a_initial_minors": {
+      "themeColor": "#0b1410",
+      "htmlBackgroundColor": "rgb(11, 20, 16)",
+      "axisMarkCount": 4,
+      "rightAxisMark": {
+        "present": true,
+        "rightOffsetPx": 20,
+        "verticallyCentered": true
+      },
+      "disabledCursor": "default"
+    },
+    "b_after_1_grow": {
+      "seedLabel": "SPECIMEN / #53F7617D",
+      "liveSeed": "1408721277",
+      "ghostCount": 1,
+      "ghostSeeds": "5eed1234"
+    },
+    "c_after_4_grows": {
+      "after2": {
+        "seedLabel": "SPECIMEN / #CFE7AAD5",
+        "liveSeed": "3488066261",
+        "ghostCount": 2,
+        "ghostSeeds": "5eed1234,53f7617d"
+      },
+      "after3": {
+        "seedLabel": "SPECIMEN / #0F8CFA9B",
+        "liveSeed": "260897435",
+        "ghostCount": 3,
+        "ghostSeeds": "5eed1234,53f7617d,cfe7aad5"
+      },
+      "after4": {
+        "seedLabel": "SPECIMEN / #A2ACE29C",
+        "liveSeed": "2729239196",
+        "ghostCount": 3,
+        "ghostSeeds": "53f7617d,cfe7aad5,f8cfa9b"
+      }
+    },
+    "c_pixel_census_settled_with_ghosts": {
+      "ghostBand": 276169,
+      "faint": 31271,
+      "bold": 35956,
+      "alphaSum": 24659368
+    },
+    "c_pixel_census_early_frame_with_ghosts": {
+      "ghostBand": 305828,
+      "faint": 15575,
+      "bold": 21993,
+      "alphaSum": 12251321
+    },
+    "d_after_reload": {
+      "seedLabel": "SPECIMEN / #5EED1234",
+      "liveSeed": "1592594996",
+      "ghostCount": 0,
+      "ghostSeeds": ""
+    },
+    "d_pixel_census_early_frame_without_ghosts": {
+      "ghostBand": 311408,
+      "faint": 11610,
+      "bold": 20378,
+      "alphaSum": 11252565
+    },
+    "pixel_proof": {
+      "withGhostsAlphaSum": 12251321,
+      "withoutGhostsAlphaSum": 11252565,
+      "ghostAlphaMass": 998756,
+      "note": "same grow-in instant (~30ms): the difference is ghost tissue alone"
+    },
+    "e_rapid_double_grow": {
+      "seedLabel": "SPECIMEN / #0F8CFA9B",
+      "liveSeed": "260897435",
+      "ghostCount": 3,
+      "ghostSeeds": "5eed1234,53f7617d,cfe7aad5",
+      "rafAtSettle": 45,
+      "rafPlateau": 45
+    },
+    "f_reduced_motion": {
+      "preReduced": {
+        "seedLabel": "SPECIMEN / #0F8CFA9B",
+        "liveSeed": "260897435",
+        "ghostCount": 3,
+        "ghostSeeds": "5eed1234,53f7617d,cfe7aad5"
+      },
+      "reduced": {
+        "seedLabel": "SPECIMEN / #A2ACE29C",
+        "liveSeed": "2729239196",
+        "ghostCount": 3,
+        "ghostSeeds": "53f7617d,cfe7aad5,f8cfa9b"
+      },
+      "earlyRaf": 0,
+      "settledRaf": 0,
+      "byteIdentical": true
+    },
+    "mobile_after_4_grows": {
+      "seedLabel": "SPECIMEN / #A2ACE29C",
+      "liveSeed": "2729239196",
+      "ghostCount": 3,
+      "ghostSeeds": "53f7617d,cfe7aad5,f8cfa9b"
+    },
+    "mobile_footer_lines": {
+      "seedLabel": 1,
+      "modelLabel": 1
+    },
+    "min320_footer_lines": {
+      "seed": 1,
+      "model": 1
+    }
+  },
+  "textFloor": {
+    "desktop-1440": {
+      "count": 46,
+      "minFontSizePx": 11.52,
+      "undersized": [],
+      "seedReadout": {
+        "selector": "span.mono-label",
+        "text": "SPECIMEN / #A2ACE29C",
+        "fontSizePx": 11.52
+      }
+    },
+    "mobile-390": {
+      "count": 46,
+      "minFontSizePx": 11.52,
+      "undersized": []
+    }
+  },
+  "notes": {
+    "desktopConsoleErrors": [],
+    "mobileConsoleErrors": []
+  }
+}

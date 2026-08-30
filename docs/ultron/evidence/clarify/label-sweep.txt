@@ -1,0 +1,87 @@
+Label distribution over 9000 plants (225 env combos x 40 seeds)
+  height      short 26.8%  medium 40.2%  tall 33.0%
+  branching   sparse 20.0%  balanced 40.0%  dense 40.0%
+  leafDensity light 20.0%  medium 40.0%  lush 40.0%
+  lean        left 33.3%  upright 33.3%  right 33.3%
+
+Brief verification environments (40 seeds each, defaults unless named):
+
+  default  (humidity=55 sunlightHours=12 soilAcidity=6.5 gravity=1)
+    words: height=[medium]  branching=[balanced]  leafDensity=[medium]  lean=[upright]
+    branchCount: mean 63.000  min 63.000  max 63.000
+    leafCount  : mean 48.875  min 41.000  max 53.000
+    heightRatio: mean 0.534  min 0.513  max 0.549
+    leanDegrees: mean 1.298  min -2.866  max 5.485
+
+  humidity 0  (humidity=0 sunlightHours=12 soilAcidity=6.5 gravity=1)
+    words: height=[medium]  branching=[sparse]  leafDensity=[light]  lean=[upright]
+    branchCount: mean 31.000  min 31.000  max 31.000
+    leafCount  : mean 23.475  min 21.000  max 28.000
+    heightRatio: mean 0.508  min 0.496  max 0.526
+    leanDegrees: mean 0.770  min -2.429  max 3.567
+
+  humidity 100  (humidity=100 sunlightHours=12 soilAcidity=6.5 gravity=1)
+    words: height=[medium]  branching=[dense]  leafDensity=[lush]  lean=[upright]
+    branchCount: mean 125.000  min 125.000  max 125.000
+    leafCount  : mean 96.300  min 89.000  max 103.000
+    heightRatio: mean 0.542  min 0.522  max 0.560
+    leanDegrees: mean 0.441  min -3.870  max 4.008
+
+  sunlight 0  (humidity=55 sunlightHours=0 soilAcidity=6.5 gravity=1)
+    words: height=[short]  branching=[balanced]  leafDensity=[medium]  lean=[upright]
+    branchCount: mean 63.000  min 63.000  max 63.000
+    leafCount  : mean 48.875  min 41.000  max 53.000
+    heightRatio: mean 0.208  min 0.201  max 0.213
+    leanDegrees: mean 0.769  min -3.254  max 4.698
+
+  sunlight 24  (humidity=55 sunlightHours=24 soilAcidity=6.5 gravity=1)
+    words: height=[tall]  branching=[balanced]  leafDensity=[medium]  lean=[upright]
+    branchCount: mean 63.000  min 63.000  max 63.000
+    leafCount  : mean 48.875  min 41.000  max 53.000
+    heightRatio: mean 0.835  min 0.835  max 0.835
+    leanDegrees: mean 1.895  min -1.914  max 6.008
+
+  acidity 3  (humidity=55 sunlightHours=12 soilAcidity=3 gravity=1)
+    words: height=[medium]  branching=[balanced]  leafDensity=[medium]  lean=[upright]
+    branchCount: mean 63.000  min 63.000  max 63.000
+    leafCount  : mean 48.875  min 41.000  max 53.000
+    heightRatio: mean 0.534  min 0.513  max 0.549
+    leanDegrees: mean 1.298  min -2.866  max 5.485
+
+  acidity 9  (humidity=55 sunlightHours=12 soilAcidity=9 gravity=1)
+    words: height=[medium]  branching=[balanced]  leafDensity=[medium]  lean=[upright]
+    branchCount: mean 63.000  min 63.000  max 63.000
+    leafCount  : mean 48.875  min 41.000  max 53.000
+    heightRatio: mean 0.534  min 0.513  max 0.549
+    leanDegrees: mean 1.298  min -2.866  max 5.485
+
+  gravity 0.2  (humidity=55 sunlightHours=12 soilAcidity=6.5 gravity=0.2)
+    words: height=[medium]  branching=[balanced]  leafDensity=[medium]  lean=[left]
+    branchCount: mean 63.000  min 63.000  max 63.000
+    leafCount  : mean 48.875  min 41.000  max 53.000
+    heightRatio: mean 0.588  min 0.559  max 0.616
+    leanDegrees: mean -18.679  min -22.694  max -14.612
+
+  gravity 2  (humidity=55 sunlightHours=12 soilAcidity=6.5 gravity=2)
+    words: height=[medium]  branching=[balanced]  leafDensity=[medium]  lean=[right]
+    branchCount: mean 63.000  min 63.000  max 63.000
+    leafCount  : mean 48.875  min 41.000  max 53.000
+    heightRatio: mean 0.459  min 0.445  max 0.477
+    leanDegrees: mean 28.535  min 24.241  max 32.801
+
+  midpoint h25/s6/a3/g0.2  (humidity=25 sunlightHours=6 soilAcidity=3 gravity=0.2)
+    words: height=[medium]  branching=[balanced]  leafDensity=[medium]  lean=[left]
+    branchCount: mean 63.000  min 63.000  max 63.000
+    leafCount  : mean 48.875  min 41.000  max 53.000
+    heightRatio: mean 0.400  min 0.381  max 0.417
+    leanDegrees: mean -18.687  min -22.309  max -15.257
+
+  midpoint h80/s18/a9/g2  (humidity=80 sunlightHours=18 soilAcidity=9 gravity=2)
+    words: height=[medium]  branching=[dense]  leafDensity=[lush]  lean=[right]
+    branchCount: mean 125.000  min 125.000  max 125.000
+    leafCount  : mean 96.300  min 89.000  max 103.000
+    heightRatio: mean 0.649  min 0.631  max 0.676
+    leanDegrees: mean 28.915  min 24.824  max 32.663
+
+Thresholds in force: height tall>=0.68 medium>=0.34 | branching dense>=96 balanced>=48
+leaf density lush>=72 medium>=34 | lean left<=-7 right>=7 (canopy-centroid degrees)

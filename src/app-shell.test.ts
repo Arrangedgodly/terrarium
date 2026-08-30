@@ -6,12 +6,12 @@ describe("application shell contract", () => {
     expect(APP_TITLE).toBe("The Algorithmic Terrarium");
   });
 
-  it("declares the first-view semantic surfaces", () => {
+  it("declares the first-view semantic surfaces in DOM order: reading after the chamber, actions with the controls", () => {
     expect(SHELL_SURFACES).toEqual([
       "growth-chamber",
+      "plant-reading",
       "environment-controls",
       "action-block",
-      "plant-reading",
     ]);
   });
 });

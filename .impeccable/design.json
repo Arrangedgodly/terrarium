@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-08-29T00:00:00.000Z",
+  "title": "Design System: The Algorithmic Terrarium",
+  "extensions": {
+    "colorMeta": {
+      "forest-floor-ink": { "role": "neutral", "displayName": "Forest-Floor Ink", "canonical": "oklch(18.1% 0.016 165.4)", "tonalRamp": ["#050d0a", "#1c2621", "#37413c", "#535e59", "#727d78", "#929d98", "#b3bfb9", "#d5e2db"] },
+      "moss-shade-ink": { "role": "neutral", "displayName": "Moss-Shade Ink", "canonical": "oklch(21.6% 0.022 164.0)", "tonalRamp": ["#030e09", "#192720", "#34423b", "#505f58", "#6f7e76", "#8e9f96", "#afc0b8", "#d2e3da"] },
+      "thicket-green": { "role": "neutral", "displayName": "Thicket Green", "canonical": "oklch(34.9% 0.035 156.9)", "tonalRamp": ["#000f06", "#14281c", "#2f4437", "#4b6153", "#6a8172", "#89a192", "#aac3b3", "#cce5d5"] },
+      "lichen-bloom": { "role": "neutral", "displayName": "Lichen Bloom", "canonical": "oklch(94.4% 0.027 135.0)", "tonalRamp": ["#060e04", "#1e2619", "#384233", "#555f50", "#737e6e", "#939e8e", "#b4c0ae", "#d7e2d1"] },
+      "lichen-flare": { "role": "secondary", "displayName": "Lichen Flare", "canonical": "oklch(84.0% 0.078 147.6)", "tonalRamp": ["#001200", "#002d0a", "#1d4925", "#3b6741", "#5a875f", "#79a87f", "#9aca9f", "#bcedc1"] },
+      "seedling-mint": { "role": "secondary", "displayName": "Seedling Mint", "canonical": "oklch(91.1% 0.091 153.9)", "tonalRamp": ["#001400", "#002f0b", "#014b26", "#2a6a43", "#4b8a61", "#6bab80", "#8ccda1", "#aff0c3"] },
+      "seed-kernel-amber": { "role": "primary", "displayName": "Seed Kernel Amber", "canonical": "oklch(84.5% 0.110 79.6)", "tonalRamp": ["#210000", "#3d1800", "#5c3400", "#7b5200", "#9c711d", "#be9243", "#e1b366", "#ffd688"] },
+      "dried-stem-sage": { "role": "neutral", "displayName": "Dried-Stem Sage", "canonical": "oklch(70.8% 0.031 159.6)", "tonalRamp": ["#010f07", "#16281e", "#304338", "#4c6155", "#6b8074", "#8aa093", "#abc2b5", "#cde5d7"] },
+      "sunscald-coral": { "role": "tertiary", "displayName": "Sunscald Coral", "canonical": "oklch(79.3% 0.120 33.0)", "tonalRamp": ["#2d0000", "#4e0000", "#701c0b", "#923c2b", "#b65c4a", "#da7d69", "#ff9e89", "#ffc0aa"] },
+      "hairline-lichen": { "role": "neutral", "displayName": "Hairline Lichen", "canonical": "rgba(190, 228, 192, 0.18)", "tonalRamp": ["#001100", "#0a2b0f", "#26472a", "#436546", "#628464", "#81a583", "#a2c7a4", "#c4eac6"] },
+      "marked-lichen": { "role": "neutral", "displayName": "Marked Lichen", "canonical": "rgba(190, 228, 192, 0.32)", "tonalRamp": ["#001100", "#0a2b0f", "#26472a", "#436546", "#628464", "#81a583", "#a2c7a4", "#c4eac6"] }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "The terrarium's name in the masthead; capped at 12ch so it stacks like a specimen label." },
+      "headline": { "displayName": "Headline", "purpose": "Section titles — chamber, controls, reading." },
+      "body": { "displayName": "Body", "purpose": "Explanatory prose; measure stays under ~34rem." },
+      "label": { "displayName": "Label (Mono)", "purpose": "Eyebrows, status tags, footer labels, reading terms, and range hints — the 0.72rem mono measurement floor (nothing renders below 11px). Uppercase with 0.12em tracking." }
+    },
+    "shadows": [
+      { "name": "chamber-grounding", "value": "0 24px 80px rgba(0, 0, 0, 0.2)", "purpose": "The only shadow in the system. Grounds the growth chamber frame like a lamp over a field-station bench." }
+    ],
+    "motion": [
+      { "name": "state-ease", "value": "160ms ease", "purpose": "All state transitions: borders, backgrounds, shadows, color, transform." },
+      { "name": "key-lift", "value": "translateY(-1px) on hover, 0 on active", "purpose": "The primary action's tactile lift; no other element moves." },
+      { "name": "grow-in", "value": "600ms staged quartic ease-out (canvas rAF, hand-rolled in src/plant-canvas.ts)", "purpose": "The specimen's one authored entrance after a Grow press: ground and trunk first, branches extending by depth, leaves unfurling behind them, fruit buds last. Generation stays deterministic; only the render phase animates. Collapses to the finished frame immediately under prefers-reduced-motion." },
+      { "name": "reduced-motion-kill", "value": "transition-duration 0.01ms !important", "purpose": "Global prefers-reduced-motion switch applied to all elements." }
+    ],
+    "breakpoints": [
+      { "name": "md", "value": "940px", "purpose": "Tightens rhythm: 16px section padding, 760px shell, closer grid." },
+      { "name": "sm", "value": "760px", "purpose": "Single column: chamber first, plant reading directly beneath it, rail under both with the action block closing it; trait row becomes two-by-two." }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Action (Grow)",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The instrument's one warm key; triggers a new seeded growth.",
+      "html": "<button class=\"ds-btn-primary\">Grow plant <span aria-hidden=\"true\">↗</span></button>",
+      "css": ".ds-btn-primary { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 48px; padding: 0 16px; border: 1px solid var(--amber-300); border-radius: var(--radius-control); background: var(--amber-300); color: #1a221a; font-weight: 700; cursor: pointer; transition: border-color 160ms ease, background 160ms ease, transform 160ms ease; } .ds-btn-primary:hover { background: #ffd58f; transform: translateY(-1px); } .ds-btn-primary:active { transform: translateY(0); } .ds-btn-primary:focus-visible { outline: 2px solid var(--lichen-400); outline-offset: 4px; box-shadow: 0 0 0 3px rgba(169, 217, 174, 0.3); } .ds-btn-primary:disabled { border-color: rgba(242, 196, 118, 0.4); background: rgba(242, 196, 118, 0.48); color: rgba(26, 34, 26, 0.72); cursor: default; transform: none; }"
+    },
+    {
+      "name": "Secondary Action (Reset)",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Ghost key for returning to the baseline environment.",
+      "html": "<button class=\"ds-btn-secondary\">Reset defaults</button>",
+      "css": ".ds-btn-secondary { min-height: 48px; padding: 0 16px; border: 1px solid var(--line-strong); border-radius: var(--radius-control); background: transparent; color: var(--lichen-200); cursor: pointer; transition: border-color 160ms ease, background 160ms ease; } .ds-btn-secondary:hover { border-color: var(--lichen-400); background: rgba(169, 217, 174, 0.08); } .ds-btn-secondary:active { background: rgba(169, 217, 174, 0.14); } .ds-btn-secondary:focus-visible { outline: 2px solid var(--lichen-400); outline-offset: 4px; box-shadow: 0 0 0 3px rgba(169, 217, 174, 0.3); }"
+    },
+    {
+      "name": "Environment Slider",
+      "kind": "input",
+      "refersTo": "",
+      "description": "Signature instrument control: sans label, live amber mono value, native range, mono endpoint hints.",
+      "html": "<div class=\"ds-range\"><div class=\"ds-range-labelrow\"><label for=\"ds-humidity\">Humidity</label><output id=\"ds-humidity-value\" for=\"ds-humidity\">55%</output></div><input class=\"ds-range-input\" id=\"ds-humidity\" type=\"range\" min=\"0\" max=\"100\" step=\"1\" value=\"55\" /><div class=\"ds-range-hints\" aria-hidden=\"true\"><span>dry</span><span>wet</span></div></div>",
+      "css": ".ds-range-labelrow { display: flex; align-items: center; justify-content: space-between; gap: 12px; } .ds-range-labelrow label { color: var(--lichen-200); font-size: 0.9rem; } .ds-range-labelrow output { color: var(--amber-300); font-family: ui-monospace, SFMono-Regular, Consolas, monospace; font-size: 0.82rem; } .ds-range-input { width: 100%; min-height: 44px; margin: 0; accent-color: var(--lichen-400); cursor: pointer; } .ds-range-input:focus-visible { outline: 2px solid var(--lichen-400); outline-offset: 4px; box-shadow: 0 0 0 3px rgba(169, 217, 174, 0.3); } .ds-range-hints { display: flex; align-items: center; justify-content: space-between; gap: 12px; color: var(--muted-400); font-family: ui-monospace, SFMono-Regular, Consolas, monospace; font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; }"
+    },
+    {
+      "name": "Status Tag",
+      "kind": "chip",
+      "refersTo": "status-tag",
+      "description": "Pill readout for specimen state: ready, draft, grown, recovery.",
+      "html": "<span class=\"ds-status-tag\">grown</span> <span class=\"ds-status-tag ds-status-draft\">draft</span> <span class=\"ds-status-tag ds-status-recovery\">recovery</span>",
+      "css": ".ds-status-tag { display: inline-block; padding: 7px 9px; border: 1px solid rgba(178, 244, 198, 0.5); border-radius: 999px; background: rgba(178, 244, 198, 0.08); color: var(--mint-300); font-family: ui-monospace, SFMono-Regular, Consolas, monospace; font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; white-space: nowrap; transition: border-color 160ms ease, color 160ms ease, background 160ms ease; } .ds-status-draft { border-color: rgba(242, 196, 118, 0.5); background: rgba(242, 196, 118, 0.08); color: var(--amber-300); } .ds-status-recovery { border-color: rgba(255, 158, 137, 0.55); background: rgba(255, 158, 137, 0.08); color: var(--danger-300); }"
+    },
+    {
+      "name": "Instrument Panel",
+      "kind": "card",
+      "refersTo": "panel-frame",
+      "description": "The chamber/rail container: matte translucent ink, hairline border, 22px frame radius.",
+      "html": "<div class=\"ds-panel\"><div class=\"ds-panel-header\"><p class=\"ds-eyebrow\">GROWTH CHAMBER</p><h2 class=\"ds-panel-title\">Current specimen</h2></div><div class=\"ds-panel-body\">Circular specimen aperture and measurement grid live here.</div></div>",
+      "css": ".ds-panel { border: 1px solid var(--line); border-radius: var(--radius-frame); background: rgba(16, 29, 23, 0.82); overflow: hidden; } .ds-panel-header { padding: 24px 32px; border-bottom: 1px solid var(--line); } .ds-panel-title { margin: 0; font-size: clamp(1.35rem, 2vw, 1.7rem); font-weight: 500; line-height: 1.05; letter-spacing: -0.04em; color: var(--lichen-200); } .ds-panel-body { padding: 32px; color: var(--muted-400); } .ds-eyebrow { margin: 0 0 12px; color: var(--lichen-400); font-family: ui-monospace, SFMono-Regular, Consolas, monospace; font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; }"
+    },
+    {
+      "name": "Plant Reading Row",
+      "kind": "custom",
+      "refersTo": "",
+      "description": "The instrument log's trait entry: uppercase mono term over a mono value, separated by a hairline. Four cells across inside the full-width reading strip; two-by-two on small screens.",
+      "html": "<dl class=\"ds-reading\"><div><dt>Height</dt><dd>tall</dd></div><div><dt>Branching</dt><dd>sparse</dd></div></dl>",
+      "css": ".ds-reading { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; margin: 16px 0 0; } .ds-reading div { padding-top: 10px; border-top: 1px solid var(--line); } .ds-reading dt { color: var(--muted-400); font-family: ui-monospace, SFMono-Regular, Consolas, monospace; font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; } .ds-reading dd { margin: 6px 0 0; color: var(--lichen-200); font-family: ui-monospace, SFMono-Regular, Consolas, monospace; font-size: 0.82rem; } @media (max-width: 760px) { .ds-reading { grid-template-columns: 1fr 1fr; } }"
+    },
+    {
+      "name": "Growth Chamber (signature)",
+      "kind": "custom",
+      "refersTo": "panel-frame",
+      "description": "The defining instrument: header row (eyebrow, headline, status tag), canvas region (44px measurement grid, radial moss glow, four edge axis marks in Marked Lichen, circular aperture), and a mono footer strip whose first label is the seed readout — it names the current specimen (SPECIMEN / #5EED1234, 8 hex digits, mono floor) and changes with every grow. Behind the live specimen the session's last three plants linger as ghost traces: settled geometry in each specimen's own palette at ~0.08–0.17 recency-graded alpha, no ground, no glow, canvas-drawn and decorative (the canvas label describes only the current specimen). The newest ghost dims into place over the first quarter of the grow-in; reduced motion shows it at rest immediately. Session-only: survives Reset, clears on reload, never persisted. The live specimen is always the vivid one.",
+      "html": "<div class=\"ds-chamber\"><div class=\"ds-chamber-header\"><div><p class=\"ds-eyebrow\">GROWTH CHAMBER</p><h2>Current specimen</h2></div><span class=\"ds-status-tag\">ready</span></div><div class=\"ds-chamber-canvas\"><canvas role=\"img\" aria-label=\"Current seeded plant visualization…\"></canvas><span class=\"ds-axis-mark\" aria-hidden=\"true\"></span></div><div class=\"ds-chamber-footer\"><span class=\"ds-mono-label\">SPECIMEN / #5EED1234</span><span class=\"ds-mono-label\">MODEL / SEEDED BRANCHING</span></div></div>",
+      "css": ".ds-chamber { display: flex; flex-direction: column; flex: 1; overflow: hidden; border: 1px solid var(--line); border-radius: var(--radius-frame); background: rgba(16, 29, 23, 0.82); box-shadow: 0 24px 80px rgba(0, 0, 0, 0.2); } .ds-chamber-canvas { position: relative; display: grid; flex: 1; min-height: clamp(420px, 61vh, 650px); place-items: center; overflow: hidden; background: linear-gradient(rgba(174, 227, 186, 0.035) 1px, transparent 1px), linear-gradient(90deg, rgba(174, 227, 186, 0.035) 1px, transparent 1px), radial-gradient(circle at 50% 68%, rgba(96, 165, 111, 0.15), transparent 42%), #0c1812; background-size: 44px 44px, 44px 44px, auto, auto; } .ds-chamber-canvas canvas { width: min(78%, 620px); aspect-ratio: 1; border-radius: 50%; } .ds-chamber-footer { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; min-height: 52px; padding: 8px 32px; border-top: 1px solid var(--line); } .ds-mono-label { font-family: ui-monospace, SFMono-Regular, Consolas, monospace; font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted-400); } .ds-axis-mark { position: absolute; display: block; background: var(--line-strong); pointer-events: none; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Nocturnal Field Station",
+    "overview": "The interface is a small outdoor laboratory after dark: matte ink surfaces, hairline measurement marks, and one warm amber signal, with a living specimen growing in the chamber. The mood is calm scientific wonder — patient, observant, and slightly magical. Measurement is presented as care for the specimen, not cold engineering: every readout exists so the plant can be understood, not so the machine can be admired.\n\nThe system runs on two voices. A calm humanist sans speaks in sentences — names, explanations, and the one-line story of the loop. A compact monospaced face measures — uppercase eyebrows, live values, trait readouts, and footer labels. Depth comes from tonal steps between ink surfaces and hairline rules, not from stacked shadows or glass. Motion is brief (160ms ease) and tactile: the grow action lifts one pixel, sliders respond under the hand, nothing else performs.\n\nThe specimen itself is procedural and paints in its own environment-driven palette, so the chrome stays deliberately quiet: matte, low-saturation, and green-dark, letting the plant carry saturation and surprise.",
+    "keyCharacteristics": [
+      "Matte, near-black green ink surfaces with tonal (not shadow-based) depth.",
+      "Two typographic voices: humanist sans for prose, monospace for measurement.",
+      "One warm accent (amber) reserved for living readouts and the grow action.",
+      "Hairline rules and measurement marks as the primary structural ornament.",
+      "Circular specimen aperture with a faint 44px measurement grid.",
+      "Session-only specimen memory: the last three plants linger as faint ghost traces behind the live one, and the footer names the current seed.",
+      "Local system fonts only — the terrarium is self-contained."
+    ],
+    "rules": [
+      { "name": "The Living Readout Rule", "body": "Amber marks everything the environment is currently saying: the grow action, live control values, and draft state. If it is not alive, it is not amber. Chrome, headings, and static copy never take the warm hue.", "section": "colors" },
+      { "name": "The Specimen Saturation Rule", "body": "The procedural plant (canvas) owns saturation. Chrome accents stay below it in chroma so the specimen is always the first visual read. The plant's palette is generated per specimen in src/generator.ts (createPalette); the code is the canonical source; do not freeze these values into tokens.", "section": "colors" },
+      { "name": "The Two Voices Rule", "body": "Sans explains, mono measures. Prose is never set in mono; values, traits, and measurement labels are never set in the sans. When a new readout is added, it joins the mono voice.", "section": "typography" },
+      { "name": "The Single Grounding Shadow Rule", "body": "Only the growth chamber casts a shadow. Every other surface is flat; if a new element seems to need elevation, it needs a tonal step or a hairline instead.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do structure with hairlines first: a 1px Hairline Lichen rule before any fill, card, or divider.",
+      "Do keep amber living: Grow action, live values, draft state — and nothing else.",
+      "Do set every measurement in the mono voice (uppercase 0.12em tracking) and every explanation in the sans.",
+      "Do hold 44px minimum hit height on sliders and 48px on buttons.",
+      "Do move in 160ms ease with a 1px lift at most, and honor prefers-reduced-motion with the global kill switch.",
+      "Do let the specimen own saturation; keep chrome accents quieter than the plant.",
+      "Do keep specimen memory session-only: ghosts and seed names live in the page's memory, survive Reset, and clear on reload — the terrarium never persists."
+    ],
+    "donts": [
+      "Don't use glassmorphism, blur, or frosted translucency — surfaces are matte ink.",
+      "Don't fall into a stock dashboard grid of repeated cards; this is one instrument with regions, not a grid of widgets.",
+      "Don't reach for neon cyberpunk glow; the darkness is botanical, not synthetic.",
+      "Don't accumulate rounded cards; the 22px frame belongs to real containers, not decoration.",
+      "Don't add shadows beyond the growth chamber's grounding shadow.",
+      "Don't load remote fonts or assets; the stack is local/system only.",
+      "Don't let color carry meaning alone — every state also exists in text (status messages, the reading, the canvas fallback)."
+    ]
+  }
+}

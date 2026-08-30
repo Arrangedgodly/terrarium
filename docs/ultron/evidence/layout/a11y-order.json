@@ -1,0 +1,48 @@
+{
+  "domOrderInMain": [
+    "growth-chamber",
+    "plant-reading",
+    "control-rail"
+  ],
+  "tabOrder": [
+    {
+      "tag": "input",
+      "id": "humidity"
+    },
+    {
+      "tag": "input",
+      "id": "sunlight"
+    },
+    {
+      "tag": "input",
+      "id": "acidity"
+    },
+    {
+      "tag": "input",
+      "id": "gravity"
+    },
+    {
+      "tag": "button",
+      "id": "grow"
+    },
+    {
+      "tag": "button",
+      "id": "reset"
+    }
+  ],
+  "headings": [
+    "H1: The Algorithmic Terrarium",
+    "H2: Current specimen",
+    "H2: Medium specimen",
+    "H2: Set the conditions"
+  ],
+  "landmarks": [
+    "header#page-title",
+    "main",
+    "section#chamber-title",
+    "section#reading-title",
+    "aside#controls-title",
+    "form"
+  ],
+  "readingAriaOwner": "reading-title"
+}

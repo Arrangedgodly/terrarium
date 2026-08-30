@@ -1,0 +1,196 @@
+[
+  {
+    "preset": "01-default",
+    "env": "defaults",
+    "title": "Medium specimen",
+    "copy": "This stylized visual interpretation shows balanced branching, medium leaf density, and an upright posture (1°).",
+    "environment": "Humidity 55% · Sunlight 12 h · Soil pH 6.5 · Gravity 1.0 g",
+    "values": {
+      "height": "medium",
+      "branching": "balanced",
+      "leafDensity": "medium",
+      "lean": "upright (1°)"
+    },
+    "seed": "1592594996",
+    "pixels": {
+      "canvasSize": {
+        "width": 586,
+        "height": 586
+      },
+      "plantSpanFraction": 0.5887372013651877,
+      "topFraction": 0.295221843003413,
+      "bottomFraction": 0.8839590443686007,
+      "crownWidthFraction": 0.6296928327645052,
+      "centroidOffsetFraction": -0.0061977395707168105,
+      "plantPixels": 25744
+    }
+  },
+  {
+    "preset": "02-humidity-0",
+    "env": {
+      "humidity": 0
+    },
+    "title": "Medium specimen",
+    "copy": "This stylized visual interpretation shows sparse branching, light leaf density, and an upright posture (1°).",
+    "environment": "Humidity 0% · Sunlight 12 h · Soil pH 6.5 · Gravity 1.0 g",
+    "values": {
+      "height": "medium",
+      "branching": "sparse",
+      "leafDensity": "light",
+      "lean": "upright (1°)"
+    },
+    "seed": "1408721277",
+    "pixels": {
+      "canvasSize": {
+        "width": 586,
+        "height": 586
+      },
+      "plantSpanFraction": 0.5426621160409556,
+      "topFraction": 0.3412969283276451,
+      "bottomFraction": 0.8839590443686007,
+      "crownWidthFraction": 0.5597269624573379,
+      "centroidOffsetFraction": -0.009600847675610485,
+      "plantPixels": 13335
+    }
+  },
+  {
+    "preset": "03-humidity-100",
+    "env": {
+      "humidity": 100
+    },
+    "title": "Medium specimen",
+    "copy": "This stylized visual interpretation shows dense branching, lush leaf density, and an upright posture (1°).",
+    "environment": "Humidity 100% · Sunlight 12 h · Soil pH 6.5 · Gravity 1.0 g",
+    "values": {
+      "height": "medium",
+      "branching": "dense",
+      "leafDensity": "lush",
+      "lean": "upright (1°)"
+    },
+    "seed": "1408721277",
+    "pixels": {
+      "canvasSize": {
+        "width": 586,
+        "height": 586
+      },
+      "plantSpanFraction": 0.5767918088737202,
+      "topFraction": 0.30716723549488056,
+      "bottomFraction": 0.8839590443686007,
+      "crownWidthFraction": 0.7201365187713311,
+      "centroidOffsetFraction": -0.01411200746647047,
+      "plantPixels": 46559
+    }
+  },
+  {
+    "preset": "04-sunlight-0",
+    "env": {
+      "sunlightHours": 0
+    },
+    "title": "Short specimen",
+    "copy": "This stylized visual interpretation shows balanced branching, medium leaf density, and an upright posture (1°).",
+    "environment": "Humidity 55% · Sunlight 0 h · Soil pH 6.5 · Gravity 1.0 g",
+    "values": {
+      "height": "short",
+      "branching": "balanced",
+      "leafDensity": "medium",
+      "lean": "upright (1°)"
+    },
+    "seed": "1408721277",
+    "pixels": {
+      "canvasSize": {
+        "width": 586,
+        "height": 586
+      },
+      "plantSpanFraction": 0.2593856655290102,
+      "topFraction": 0.6245733788395904,
+      "bottomFraction": 0.8839590443686007,
+      "crownWidthFraction": 0.5597269624573379,
+      "centroidOffsetFraction": -0.0066970264738719035,
+      "plantPixels": 9862
+    }
+  },
+  {
+    "preset": "05-sunlight-24",
+    "env": {
+      "sunlightHours": 24
+    },
+    "title": "Tall specimen",
+    "copy": "This stylized visual interpretation shows balanced branching, medium leaf density, and an upright posture (0°).",
+    "environment": "Humidity 55% · Sunlight 24 h · Soil pH 6.5 · Gravity 1.0 g",
+    "values": {
+      "height": "tall",
+      "branching": "balanced",
+      "leafDensity": "medium",
+      "lean": "upright (0°)"
+    },
+    "seed": "1408721277",
+    "pixels": {
+      "canvasSize": {
+        "width": 586,
+        "height": 586
+      },
+      "plantSpanFraction": 0.8839590443686007,
+      "topFraction": 0,
+      "bottomFraction": 0.8839590443686007,
+      "crownWidthFraction": 0.9982935153583617,
+      "centroidOffsetFraction": 0.0008095404491120568,
+      "plantPixels": 37174
+    }
+  },
+  {
+    "preset": "06-gravity-2",
+    "env": {
+      "gravity": 2
+    },
+    "title": "Medium specimen",
+    "copy": "This stylized visual interpretation shows balanced branching, medium leaf density, and a lean of 26° to the right.",
+    "environment": "Humidity 55% · Sunlight 12 h · Soil pH 6.5 · Gravity 2.0 g",
+    "values": {
+      "height": "medium",
+      "branching": "balanced",
+      "leafDensity": "medium",
+      "lean": "right (26°)"
+    },
+    "seed": "1408721277",
+    "pixels": {
+      "canvasSize": {
+        "width": 586,
+        "height": 586
+      },
+      "plantSpanFraction": 0.5017064846416383,
+      "topFraction": 0.3822525597269625,
+      "bottomFraction": 0.8839590443686007,
+      "crownWidthFraction": 0.6638225255972696,
+      "centroidOffsetFraction": 0.14477830871476088,
+      "plantPixels": 24745
+    }
+  },
+  {
+    "preset": "07-gravity-0.2",
+    "env": {
+      "gravity": 0.2
+    },
+    "title": "Medium specimen",
+    "copy": "This stylized visual interpretation shows balanced branching, medium leaf density, and a lean of 21° to the left.",
+    "environment": "Humidity 55% · Sunlight 12 h · Soil pH 6.5 · Gravity 0.2 g",
+    "values": {
+      "height": "medium",
+      "branching": "balanced",
+      "leafDensity": "medium",
+      "lean": "left (21°)"
+    },
+    "seed": "1408721277",
+    "pixels": {
+      "canvasSize": {
+        "width": 586,
+        "height": 586
+      },
+      "plantSpanFraction": 0.6296928327645052,
+      "topFraction": 0.25426621160409557,
+      "bottomFraction": 0.8839590443686007,
+      "crownWidthFraction": 0.726962457337884,
+      "centroidOffsetFraction": -0.15350355247869402,
+      "plantPixels": 29626
+    }
+  }
+]

@@ -1,0 +1,3389 @@
+{
+  "appUrl": "http://127.0.0.1:5197/",
+  "viewports": {
+    "desktop-1440": {
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "textElementCount": 46,
+      "minFontSizePx": 11.52,
+      "minElements": [
+        {
+          "selector": "p.eyebrow",
+          "text": "LOCAL GROWTH STUDY · 001"
+        },
+        {
+          "selector": "p.local-note",
+          "text": "No cloud storageseeded output"
+        },
+        {
+          "selector": "span",
+          "text": "seeded output"
+        },
+        {
+          "selector": "p.eyebrow",
+          "text": "GROWTH CHAMBER"
+        },
+        {
+          "selector": "span.status-tag",
+          "text": "ready"
+        },
+        {
+          "selector": "span.mono-label",
+          "text": "SPECIMEN / CURRENT GROWTH"
+        },
+        {
+          "selector": "span.mono-label",
+          "text": "MODEL / SEEDED BRANCHING"
+        },
+        {
+          "selector": "p.eyebrow",
+          "text": "PLANT READING"
+        },
+        {
+          "selector": "dt",
+          "text": "Height"
+        },
+        {
+          "selector": "dt",
+          "text": "Branching"
+        },
+        {
+          "selector": "dt",
+          "text": "Leaf density"
+        },
+        {
+          "selector": "dt",
+          "text": "Lean"
+        },
+        {
+          "selector": "p.eyebrow",
+          "text": "ENVIRONMENT"
+        },
+        {
+          "selector": "span",
+          "text": "dry"
+        },
+        {
+          "selector": "span",
+          "text": "wet"
+        },
+        {
+          "selector": "span",
+          "text": "0 h"
+        },
+        {
+          "selector": "span",
+          "text": "24 h"
+        },
+        {
+          "selector": "span",
+          "text": "acidic"
+        },
+        {
+          "selector": "span",
+          "text": "alkaline"
+        },
+        {
+          "selector": "span",
+          "text": "light"
+        },
+        {
+          "selector": "span",
+          "text": "heavy"
+        }
+      ],
+      "sizeHistogram": [
+        {
+          "px": 11.52,
+          "n": 21
+        },
+        {
+          "px": 12.16,
+          "n": 2
+        },
+        {
+          "px": 13.12,
+          "n": 8
+        },
+        {
+          "px": 14.4,
+          "n": 6
+        },
+        {
+          "px": 16,
+          "n": 5
+        },
+        {
+          "px": 27.2,
+          "n": 3
+        },
+        {
+          "px": 72,
+          "n": 1
+        }
+      ],
+      "undersized": [],
+      "named": {
+        "checks": [
+          {
+            "kind": "eyebrow",
+            "selector": "p.eyebrow",
+            "text": "LOCAL GROWTH STUDY · 001",
+            "fontSizePx": 11.52,
+            "lines": 1,
+            "expectedLines": 1,
+            "wrapped": false,
+            "hOverflow": false,
+            "clippedByFrame": null,
+            "outsideReadingPanel": null
+          },
+          {
+            "kind": "eyebrow",
+            "selector": "p.eyebrow",
+            "text": "GROWTH CHAMBER",
+            "fontSizePx": 11.52,
+            "lines": 1,
+            "expectedLines": 1,
+            "wrapped": false,
+            "hOverflow": false,
+            "clippedByFrame": false,
+            "outsideReadingPanel": null
+          },
+          {
+            "kind": "eyebrow",
+            "selector": "p.eyebrow",
+            "text": "PLANT READING",
+            "fontSizePx": 11.52,
+            "lines": 1,
+            "expectedLines": 1,
+            "wrapped": false,
+            "hOverflow": false,
+            "clippedByFrame": null,
+            "outsideReadingPanel": false
+          },
+          {
+            "kind": "eyebrow",
+            "selector": "p.eyebrow",
+            "text": "ENVIRONMENT",
+            "fontSizePx": 11.52,
+            "lines": 1,
+            "expectedLines": 1,
+            "wrapped": false,
+            "hOverflow": false,
+            "clippedByFrame": null,
+            "outsideReadingPanel": null
+          },
+          {
+            "kind": "status-tag",
+            "selector": "span.status-tag",
+            "text": "ready",
+            "fontSizePx": 11.52,
+            "lines": 1,
+            "expectedLines": 1,
+            "wrapped": false,
+            "hOverflow": false,
+            "clippedByFrame": false,
+            "outsideReadingPanel": null
+          },
+          {
+            "kind": "range-hint",
+            "selector": "span.",
+            "text": "dry",
+            "fontSizePx": 11.52,
+            "lines": 1,
+            "expectedLines": 1,
+            "wrapped": false,
+            "hOverflow": false,
+            "clippedByFrame": null,
+            "outsideReadingPanel": null
+          },
+          {
+            "kind": "range-hint",
+            "selector": "span.",
+            "text": "wet",
+            "fontSizePx": 11.52,
+            "lines": 1,
+            "expectedLines": 1,
+            "wrapped": false,
+            "hOverflow": false,
+            "clippedByFrame": null,
+            "outsideReadingPanel": null
+          },
+          {
+            "kind": "range-hint",
+            "selector": "span.",
+            "text": "0 h",
+            "fontSizePx": 11.52,
+            "lines": 1,
+            "expectedLines": 1,
+            "wrapped": false,
+            "hOverflow": false,
+            "clippedByFrame": null,
+            "outsideReadingPanel": null
+          },
+          {
+            "kind": "range-hint",
+            "selector": "span.",
+            "text": "24 h",
+            "fontSizePx": 11.52,
+            "lines": 1,
+            "expectedLines": 1,
+            "wrapped": false,
+            "hOverflow": false,
+            "clippedByFrame": null,
+            "outsideReadingPanel": null
+          },
+          {
+            "kind": "range-hint",
+            "selector": "span.",
+            "text": "acidic",
+            "fontSizePx": 11.52,
+            "lines": 1,
+            "expectedLines": 1,
+            "wrapped": false,
+            "hOverflow": false,
+            "clippedByFrame": null,
+            "outsideReadingPanel": null
+          },
+          {
+            "kind": "range-hint",
+            "selector": "span.",
+            "text": "alkaline",
+            "fontSizePx": 11.52,
+            "lines": 1,
+            "expectedLines": 1,
+            "wrapped": false,
+            "hOverflow": false,
+            "clippedByFrame": null,
+            "outsideReadingPanel": null
+          },
+          {
+            "kind": "range-hint",
+            "selector": "span.",
+            "text": "light",
+            "fontSizePx": 11.52,
+            "lines": 1,
+            "expectedLines": 1,
+            "wrapped": false,
+            "hOverflow": false,
+            "clippedByFrame": null,
+            "outsideReadingPanel": null
+          },
+          {
+            "kind": "range-hint",
+            "selector": "span.",
+            "text": "heavy",
+            "fontSizePx": 11.52,
+            "lines": 1,
+            "expectedLines": 1,
+            "wrapped": false,
+            "hOverflow": false,
+            "clippedByFrame": null,
+            "outsideReadingPanel": null
+          },
+          {
+            "kind": "chamber-footer-label",
+            "selector": "span.mono-label",
+            "text": "SPECIMEN / CURRENT GROWTH",
+            "fontSizePx": 11.52,
+            "lines": 1,
+            "expectedLines": 1,
+            "wrapped": false,
+            "hOverflow": false,
+            "clippedByFrame": false,
+            "outsideReadingPanel": null
+          },
+          {
+            "kind": "chamber-footer-label",
+            "selector": "span.mono-label",
+            "text": "MODEL / SEEDED BRANCHING",
+            "fontSizePx": 11.52,
+            "lines": 1,
+            "expectedLines": 1,
+            "wrapped": false,
+            "hOverflow": false,
+            "clippedByFrame": false,
+            "outsideReadingPanel": null
+          },
+          {
+            "kind": "reading-term",
+            "selector": "dt.",
+            "text": "Height",
+            "fontSizePx": 11.52,
+            "lines": 1,
+            "expectedLines": 1,
+            "wrapped": false,
+            "hOverflow": false,
+            "clippedByFrame": null,
+            "outsideReadingPanel": false
+          },
+          {
+            "kind": "reading-term",
+            "selector": "dt.",
+            "text": "Branching",
+            "fontSizePx": 11.52,
+            "lines": 1,
+            "expectedLines": 1,
+            "wrapped": false,
+            "hOverflow": false,
+            "clippedByFrame": null,
+            "outsideReadingPanel": false
+          },
+          {
+            "kind": "reading-term",
+            "selector": "dt.",
+            "text": "Leaf density",
+            "fontSizePx": 11.52,
+            "lines": 1,
+            "expectedLines": 1,
+            "wrapped": false,
+            "hOverflow": false,
+            "clippedByFrame": null,
+            "outsideReadingPanel": false
+          },
+          {
+            "kind": "reading-term",
+            "selector": "dt.",
+            "text": "Lean",
+            "fontSizePx": 11.52,
+            "lines": 1,
+            "expectedLines": 1,
+            "wrapped": false,
+            "hOverflow": false,
+            "clippedByFrame": null,
+            "outsideReadingPanel": false
+          },
+          {
+            "kind": "reading-value",
+            "selector": "dd.",
+            "text": "medium",
+            "fontSizePx": 13.12,
+            "lines": 1,
+            "expectedLines": 1,
+            "wrapped": false,
+            "hOverflow": false,
+            "clippedByFrame": null,
+            "outsideReadingPanel": false
+          },
+          {
+            "kind": "reading-value",
+            "selector": "dd.",
+            "text": "balanced",
+            "fontSizePx": 13.12,
+            "lines": 1,
+            "expectedLines": 1,
+            "wrapped": false,
+            "hOverflow": false,
+            "clippedByFrame": null,
+            "outsideReadingPanel": false
+          },
+          {
+            "kind": "reading-value",
+            "selector": "dd.",
+            "text": "medium",
+            "fontSizePx": 13.12,
+            "lines": 1,
+            "expectedLines": 1,
+            "wrapped": false,
+            "hOverflow": false,
+            "clippedByFrame": null,
+            "outsideReadingPanel": false
+          },
+          {
+            "kind": "reading-value",
+            "selector": "dd.",
+            "text": "upright (1°)",
+            "fontSizePx": 13.12,
+            "lines": 1,
+            "expectedLines": 1,
+            "wrapped": false,
+            "hOverflow": false,
+            "clippedByFrame": null,
+            "outsideReadingPanel": false
+          },
+          {
+            "kind": "masthead-local-note",
+            "selector": "p.local-note",
+            "text": "No cloud storageseeded output",
+            "fontSizePx": 11.52,
+            "lines": 2,
+            "expectedLines": 2,
+            "wrapped": false,
+            "hOverflow": false,
+            "clippedByFrame": null,
+            "outsideReadingPanel": null
+          },
+          {
+            "kind": "environment-line",
+            "selector": "p.reading-environment",
+            "text": "Humidity 55% · Sunlight 12 h · Soil pH 6.5 ·",
+            "fontSizePx": 12.16,
+            "lines": 1,
+            "expectedLines": null,
+            "wrapped": false,
+            "hOverflow": false,
+            "clippedByFrame": null,
+            "outsideReadingPanel": null
+          },
+          {
+            "kind": "live-value",
+            "selector": "output.",
+            "text": "55%",
+            "fontSizePx": 13.12,
+            "lines": 1,
+            "expectedLines": 1,
+            "wrapped": false,
+            "hOverflow": false,
+            "clippedByFrame": null,
+            "outsideReadingPanel": null
+          },
+          {
+            "kind": "live-value",
+            "selector": "output.",
+            "text": "12 h",
+            "fontSizePx": 13.12,
+            "lines": 1,
+            "expectedLines": 1,
+            "wrapped": false,
+            "hOverflow": false,
+            "clippedByFrame": null,
+            "outsideReadingPanel": null
+          },
+          {
+            "kind": "live-value",
+            "selector": "output.",
+            "text": "pH 6.5",
+            "fontSizePx": 13.12,
+            "lines": 1,
+            "expectedLines": 1,
+            "wrapped": false,
+            "hOverflow": false,
+            "clippedByFrame": null,
+            "outsideReadingPanel": null
+          },
+          {
+            "kind": "live-value",
+            "selector": "output.",
+            "text": "1.0 g",
+            "fontSizePx": 13.12,
+            "lines": 1,
+            "expectedLines": 1,
+            "wrapped": false,
+            "hOverflow": false,
+            "clippedByFrame": null,
+            "outsideReadingPanel": null
+          }
+        ],
+        "docHorizontalOverflow": 0,
+        "viewport": {
+          "w": 1440,
+          "h": 900
+        }
+      },
+      "elements": [
+        {
+          "selector": "p.eyebrow",
+          "text": "LOCAL GROWTH STUDY · 001",
+          "fontSizePx": 11.52,
+          "fontFamily": "ui-monospace",
+          "lineHeightPx": null,
+          "rect": {
+            "x": 90,
+            "y": 40,
+            "w": 514,
+            "h": 14
+          },
+          "lines": 1
+        },
+        {
+          "selector": "h1",
+          "text": "The Algorithmic Terrarium",
+          "fontSizePx": 72,
+          "fontFamily": "\"Avenir Next\"",
+          "lineHeightPx": 67.7,
+          "rect": {
+            "x": 90,
+            "y": 66,
+            "w": 514,
+            "h": 135
+          },
+          "lines": 2
+        },
+        {
+          "selector": "p.masthead-copy",
+          "text": "Change the atmosphere. Grow what it beco",
+          "fontSizePx": 16,
+          "fontFamily": "\"Avenir Next\"",
+          "lineHeightPx": 24.8,
+          "rect": {
+            "x": 90,
+            "y": 217,
+            "w": 514,
+            "h": 25
+          },
+          "lines": 1
+        },
+        {
+          "selector": "p.local-note",
+          "text": "No cloud storageseeded output",
+          "fontSizePx": 11.52,
+          "fontFamily": "ui-monospace",
+          "lineHeightPx": 17.9,
+          "rect": {
+            "x": 1217,
+            "y": 202,
+            "w": 133,
+            "h": 36
+          },
+          "lines": 2
+        },
+        {
+          "selector": "span",
+          "text": "seeded output",
+          "fontSizePx": 11.52,
+          "fontFamily": "ui-monospace",
+          "lineHeightPx": 17.9,
+          "rect": {
+            "x": 1242,
+            "y": 221,
+            "w": 108,
+            "h": 14
+          },
+          "lines": 1
+        },
+        {
+          "selector": "p.eyebrow",
+          "text": "GROWTH CHAMBER",
+          "fontSizePx": 11.52,
+          "fontFamily": "ui-monospace",
+          "lineHeightPx": null,
+          "rect": {
+            "x": 123,
+            "y": 315,
+            "w": 205,
+            "h": 14
+          },
+          "lines": 1
+        },
+        {
+          "selector": "h2",
+          "text": "Current specimen",
+          "fontSizePx": 27.2,
+          "fontFamily": "\"Avenir Next\"",
+          "lineHeightPx": 28.6,
+          "rect": {
+            "x": 123,
+            "y": 341,
+            "w": 205,
+            "h": 29
+          },
+          "lines": 1
+        },
+        {
+          "selector": "span.status-tag",
+          "text": "ready",
+          "fontSizePx": 11.52,
+          "fontFamily": "ui-monospace",
+          "lineHeightPx": null,
+          "rect": {
+            "x": 748,
+            "y": 327,
+            "w": 61,
+            "h": 30
+          },
+          "lines": 1
+        },
+        {
+          "selector": "canvas",
+          "text": "A generated plant with medium height, ba",
+          "fontSizePx": 16,
+          "fontFamily": "\"Avenir Next\"",
+          "lineHeightPx": null,
+          "rect": {
+            "x": 174,
+            "y": 486,
+            "w": 586,
+            "h": 586
+          },
+          "lines": 0
+        },
+        {
+          "selector": "span.mono-label",
+          "text": "SPECIMEN / CURRENT GROWTH",
+          "fontSizePx": 11.52,
+          "fontFamily": "ui-monospace",
+          "lineHeightPx": null,
+          "rect": {
+            "x": 123,
+            "y": 1182,
+            "w": 207,
+            "h": 14
+          },
+          "lines": 1
+        },
+        {
+          "selector": "span.mono-label",
+          "text": "MODEL / SEEDED BRANCHING",
+          "fontSizePx": 11.52,
+          "fontFamily": "ui-monospace",
+          "lineHeightPx": null,
+          "rect": {
+            "x": 611,
+            "y": 1182,
+            "w": 199,
+            "h": 14
+          },
+          "lines": 1
+        },
+        {
+          "selector": "p.eyebrow",
+          "text": "PLANT READING",
+          "fontSizePx": 11.52,
+          "fontFamily": "ui-monospace",
+          "lineHeightPx": null,
+          "rect": {
+            "x": 123,
+            "y": 1264,
+            "w": 465,
+            "h": 14
+          },
+          "lines": 1
+        },
+        {
+          "selector": "h2",
+          "text": "Medium specimen",
+          "fontSizePx": 27.2,
+          "fontFamily": "\"Avenir Next\"",
+          "lineHeightPx": 28.6,
+          "rect": {
+            "x": 123,
+            "y": 1290,
+            "w": 465,
+            "h": 29
+          },
+          "lines": 1
+        },
+        {
+          "selector": "p.reading-copy",
+          "text": "This stylized visual interpretation show",
+          "fontSizePx": 14.4,
+          "fontFamily": "\"Avenir Next\"",
+          "lineHeightPx": 22.3,
+          "rect": {
+            "x": 123,
+            "y": 1335,
+            "w": 465,
+            "h": 45
+          },
+          "lines": 2
+        },
+        {
+          "selector": "p.reading-environment",
+          "text": "Humidity 55% · Sunlight 12 h · Soil pH 6",
+          "fontSizePx": 12.16,
+          "fontFamily": "ui-monospace",
+          "lineHeightPx": 18.2,
+          "rect": {
+            "x": 653,
+            "y": 1264,
+            "w": 664,
+            "h": 18
+          },
+          "lines": 1
+        },
+        {
+          "selector": "dt",
+          "text": "Height",
+          "fontSizePx": 11.52,
+          "fontFamily": "ui-monospace",
+          "lineHeightPx": null,
+          "rect": {
+            "x": 653,
+            "y": 1310,
+            "w": 157,
+            "h": 14
+          },
+          "lines": 1
+        },
+        {
+          "selector": "dd",
+          "text": "medium",
+          "fontSizePx": 13.12,
+          "fontFamily": "ui-monospace",
+          "lineHeightPx": null,
+          "rect": {
+            "x": 653,
+            "y": 1330,
+            "w": 157,
+            "h": 15
+          },
+          "lines": 1
+        },
+        {
+          "selector": "dt",
+          "text": "Branching",
+          "fontSizePx": 11.52,
+          "fontFamily": "ui-monospace",
+          "lineHeightPx": null,
+          "rect": {
+            "x": 822,
+            "y": 1310,
+            "w": 157,
+            "h": 14
+          },
+          "lines": 1
+        },
+        {
+          "selector": "dd",
+          "text": "balanced",
+          "fontSizePx": 13.12,
+          "fontFamily": "ui-monospace",
+          "lineHeightPx": null,
+          "rect": {
+            "x": 822,
+            "y": 1330,
+            "w": 157,
+            "h": 15
+          },
+          "lines": 1
+        },
+        {
+          "selector": "dt",
+          "text": "Leaf density",
+          "fontSizePx": 11.52,
+          "fontFamily": "ui-monospace",
+          "lineHeightPx": null,
+          "rect": {
+            "x": 991,
+            "y": 1310,
+            "w": 157,
+            "h": 14
+          },
+          "lines": 1
+        },
+        {
+          "selector": "dd",
+          "text": "medium",
+          "fontSizePx": 13.12,
+          "fontFamily": "ui-monospace",
+          "lineHeightPx": null,
+          "rect": {
+            "x": 991,
+            "y": 1330,
+            "w": 157,
+            "h": 15
+          },
+          "lines": 1
+        },
+        {
+          "selector": "dt",
+          "text": "Lean",
+          "fontSizePx": 11.52,
+          "fontFamily": "ui-monospace",
+          "lineHeightPx": null,
+          "rect": {
+            "x": 1160,
+            "y": 1310,
+            "w": 157,
+            "h": 14
+          },
+          "lines": 1
+        },
+        {
+          "selector": "dd",
+          "text": "upright (1°)",
+          "fontSizePx": 13.12,
+          "fontFamily": "ui-monospace",
+          "lineHeightPx": null,
+          "rect": {
+            "x": 1160,
+            "y": 1330,
+            "w": 157,
+            "h": 15
+          },
+          "lines": 1
+        },
+        {
+          "selector": "p.eyebrow",
+          "text": "ENVIRONMENT",
+          "fontSizePx": 11.52,
+          "fontFamily": "ui-monospace",
+          "lineHeightPx": null,
+          "rect": {
+            "x": 900,
+            "y": 323,
+            "w": 417,
+            "h": 14
+          },
+          "lines": 1
+        },
+        {
+          "selector": "h2",
+          "text": "Set the conditions",
+          "fontSizePx": 27.2,
+          "fontFamily": "\"Avenir Next\"",
+          "lineHeightPx": 28.6,
+          "rect": {
+            "x": 900,
+            "y": 349,
+            "w": 417,
+            "h": 29
+          },
+          "lines": 1
+        },
+        {
+          "selector": "p",
+          "text": "Adjust the atmosphere, then grow a new s",
+          "fontSizePx": 14.4,
+          "fontFamily": "\"Avenir Next\"",
+          "lineHeightPx": 22.3,
+          "rect": {
+            "x": 900,
+            "y": 394,
+            "w": 417,
+            "h": 45
+          },
+          "lines": 2
+        },
+        {
+          "selector": "label",
+          "text": "Humidity",
+          "fontSizePx": 14.4,
+          "fontFamily": "\"Avenir Next\"",
+          "lineHeightPx": null,
+          "rect": {
+            "x": 900,
+            "y": 503,
+            "w": 59,
+            "h": 19
+          },
+          "lines": 1
+        },
+        {
+          "selector": "output",
+          "text": "55%",
+          "fontSizePx": 13.12,
+          "fontFamily": "ui-monospace",
+          "lineHeightPx": null,
+          "rect": {
+            "x": 1293,
+            "y": 505,
+            "w": 24,
+            "h": 15
+          },
+          "lines": 1
+        },
+        {
+          "selector": "span",
+          "text": "dry",
+          "fontSizePx": 11.52,
+          "fontFamily": "ui-monospace",
+          "lineHeightPx": null,
+          "rect": {
+            "x": 900,
+            "y": 572,
+            "w": 24,
+            "h": 14
+          },
+          "lines": 1
+        },
+        {
+          "selector": "span",
+          "text": "wet",
+          "fontSizePx": 11.52,
+          "fontFamily": "ui-monospace",
+          "lineHeightPx": null,
+          "rect": {
+            "x": 1293,
+            "y": 572,
+            "w": 24,
+            "h": 14
+          },
+          "lines": 1
+        },
+        {
+          "selector": "label",
+          "text": "Sunlight hours",
+          "fontSizePx": 14.4,
+          "fontFamily": "\"Avenir Next\"",
+          "lineHeightPx": null,
+          "rect": {
+            "x": 900,
+            "y": 635,
+            "w": 95,
+            "h": 19
+          },
+          "lines": 1
+        },
+        {
+          "selector": "output",
+          "text": "12 h",
+          "fontSizePx": 13.12,
+          "fontFamily": "ui-monospace",
+          "lineHeightPx": null,
+          "rect": {
+            "x": 1286,
+            "y": 637,
+            "w": 32,
+            "h": 15
+          },
+          "lines": 1
+        },
+        {
+          "selector": "span",
+          "text": "0 h",
+          "fontSizePx": 11.52,
+          "fontFamily": "ui-monospace",
+          "lineHeightPx": null,
+          "rect": {
+            "x": 900,
+            "y": 704,
+            "w": 24,
+            "h": 14
+          },
+          "lines": 1
+        },
+        {
+          "selector": "span",
+          "text": "24 h",
+          "fontSizePx": 11.52,
+          "fontFamily": "ui-monospace",
+          "lineHeightPx": null,
+          "rect": {
+            "x": 1286,
+            "y": 704,
+            "w": 31,
+            "h": 14
+          },
+          "lines": 1
+        },
+        {
+          "selector": "label",
+          "text": "Soil acidity",
+          "fontSizePx": 14.4,
+          "fontFamily": "\"Avenir Next\"",
+          "lineHeightPx": null,
+          "rect": {
+            "x": 900,
+            "y": 767,
+            "w": 71,
+            "h": 19
+          },
+          "lines": 1
+        },
+        {
+          "selector": "output",
+          "text": "pH 6.5",
+          "fontSizePx": 13.12,
+          "fontFamily": "ui-monospace",
+          "lineHeightPx": null,
+          "rect": {
+            "x": 1270,
+            "y": 769,
+            "w": 47,
+            "h": 15
+          },
+          "lines": 1
+        },
+        {
+          "selector": "span",
+          "text": "acidic",
+          "fontSizePx": 11.52,
+          "fontFamily": "ui-monospace",
+          "lineHeightPx": null,
+          "rect": {
+            "x": 900,
+            "y": 836,
+            "w": 47,
+            "h": 14
+          },
+          "lines": 1
+        },
+        {
+          "selector": "span",
+          "text": "alkaline",
+          "fontSizePx": 11.52,
+          "fontFamily": "ui-monospace",
+          "lineHeightPx": null,
+          "rect": {
+            "x": 1254,
+            "y": 836,
+            "w": 63,
+            "h": 14
+          },
+          "lines": 1
+        },
+        {
+          "selector": "label",
+          "text": "Gravity",
+          "fontSizePx": 14.4,
+          "fontFamily": "\"Avenir Next\"",
+          "lineHeightPx": null,
+          "rect": {
+            "x": 900,
+            "y": 899,
+            "w": 46,
+            "h": 19
+          },
+          "lines": 1
+        },
+        {
+          "selector": "output",
+          "text": "1.0 g",
+          "fontSizePx": 13.12,
+          "fontFamily": "ui-monospace",
+          "lineHeightPx": null,
+          "rect": {
+            "x": 1278,
+            "y": 901,
+            "w": 39,
+            "h": 15
+          },
+          "lines": 1
+        },
+        {
+          "selector": "span",
+          "text": "light",
+          "fontSizePx": 11.52,
+          "fontFamily": "ui-monospace",
+          "lineHeightPx": null,
+          "rect": {
+            "x": 900,
+            "y": 968,
+            "w": 39,
+            "h": 14
+          },
+          "lines": 1
+        },
+        {
+          "selector": "span",
+          "text": "heavy",
+          "fontSizePx": 11.52,
+          "fontFamily": "ui-monospace",
+          "lineHeightPx": null,
+          "rect": {
+            "x": 1278,
+            "y": 968,
+            "w": 39,
+            "h": 14
+          },
+          "lines": 1
+        },
+        {
+          "selector": "button.primary-action",
+          "text": "Grow plant ↗",
+          "fontSizePx": 16,
+          "fontFamily": "\"Avenir Next\"",
+          "lineHeightPx": null,
+          "rect": {
+            "x": 900,
+            "y": 1047,
+            "w": 417,
+            "h": 48
+          },
+          "lines": 1
+        },
+        {
+          "selector": "span",
+          "text": "↗",
+          "fontSizePx": 16,
+          "fontFamily": "\"Avenir Next\"",
+          "lineHeightPx": null,
+          "rect": {
+            "x": 1288,
+            "y": 1060,
+            "w": 12,
+            "h": 22
+          },
+          "lines": 1
+        },
+        {
+          "selector": "button.secondary-action",
+          "text": "Reset defaults",
+          "fontSizePx": 16,
+          "fontFamily": "\"Avenir Next\"",
+          "lineHeightPx": null,
+          "rect": {
+            "x": 900,
+            "y": 1105,
+            "w": 417,
+            "h": 48
+          },
+          "lines": 1
+        },
+        {
+          "selector": "p.status-message",
+          "text": "Ready to grow a new specimen.",
+          "fontSizePx": 12.16,
+          "fontFamily": "\"Avenir Next\"",
+          "lineHeightPx": 17,
+          "rect": {
+            "x": 900,
+            "y": 1165,
+            "w": 417,
+            "h": 17
+          },
+          "lines": 1
+        }
+      ]
+    },
+    "mobile-390": {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "textElementCount": 46,
+      "minFontSizePx": 11.52,
+      "minElements": [
+        {
+          "selector": "p.eyebrow",
+          "text": "LOCAL GROWTH STUDY · 001"
+        },
+        {
+          "selector": "p.local-note",
+          "text": "No cloud storageseeded output"
+        },
+        {
+          "selector": "span",
+          "text": "seeded output"
+        },
+        {
+          "selector": "p.eyebrow",
+          "text": "GROWTH CHAMBER"
+        },
+        {
+          "selector": "span.status-tag",
+          "text": "ready"
+        },
+        {
+          "selector": "span.mono-label",
+          "text": "SPECIMEN / CURRENT GROWTH"
+        },
+        {
+          "selector": "span.mono-label",
+          "text": "MODEL / SEEDED BRANCHING"
+        },
+        {
+          "selector": "p.eyebrow",
+          "text": "PLANT READING"
+        },
+        {
+          "selector": "dt",
+          "text": "Height"
+        },
+        {
+          "selector": "dt",
+          "text": "Branching"
+        },
+        {
+          "selector": "dt",
+          "text": "Leaf density"
+        },
+        {
+          "selector": "dt",
+          "text": "Lean"
+        },
+        {
+          "selector": "p.eyebrow",
+          "text": "ENVIRONMENT"
+        },
+        {
+          "selector": "span",
+          "text": "dry"
+        },
+        {
+          "selector": "span",
+          "text": "wet"
+        },
+        {
+          "selector": "span",
+          "text": "0 h"
+        },
+        {
+          "selector": "span",
+          "text": "24 h"
+        },
+        {
+          "selector": "span",
+          "text": "acidic"
+        },
+        {
+          "selector": "span",
+          "text": "alkaline"
+        },
+        {
+          "selector": "span",
+          "text": "light"
+        },
+        {
+          "selector": "span",
+          "text": "heavy"
+        }
+      ],
+      "sizeHistogram": [
+        {
+          "px": 11.52,
+          "n": 21
+        },
+        {
+          "px": 12.16,
+          "n": 2
+        },
+        {
+          "px": 13.12,
+          "n": 8
+        },
+        {
+          "px": 14.4,
+          "n": 6
+        },
+        {
+          "px": 16,
+          "n": 5
+        },
+        {
+          "px": 21.6,
+          "n": 3
+        },
+        {
+          "px": 54.6,
+          "n": 1
+        }
+      ],
+      "undersized": [],
+      "named": {
+        "checks": [
+          {
+            "kind": "eyebrow",
+            "selector": "p.eyebrow",
+            "text": "LOCAL GROWTH STUDY · 001",
+            "fontSizePx": 11.52,
+            "lines": 1,
+            "expectedLines": 1,
+            "wrapped": false,
+            "hOverflow": false,
+            "clippedByFrame": null,
+            "outsideReadingPanel": null
+          },
+          {
+            "kind": "eyebrow",
+            "selector": "p.eyebrow",
+            "text": "GROWTH CHAMBER",
+            "fontSizePx": 11.52,
+            "lines": 1,
+            "expectedLines": 1,
+            "wrapped": false,
+            "hOverflow": false,
+            "clippedByFrame": false,
+            "outsideReadingPanel": null
+          },
+          {
+            "kind": "eyebrow",
+            "selector": "p.eyebrow",
+            "text": "PLANT READING",
+            "fontSizePx": 11.52,
+            "lines": 1,
+            "expectedLines": 1,
+            "wrapped": false,
+            "hOverflow": false,
+            "clippedByFrame": null,
+            "outsideReadingPanel": false
+          },
+          {
+            "kind": "eyebrow",
+            "selector": "p.eyebrow",
+            "text": "ENVIRONMENT",
+            "fontSizePx": 11.52,
+            "lines": 1,
+            "expectedLines": 1,
+            "wrapped": false,
+            "hOverflow": false,
+            "clippedByFrame": null,
+            "outsideReadingPanel": null
+          },
+          {
+            "kind": "status-tag",
+            "selector": "span.status-tag",
+            "text": "ready",
+            "fontSizePx": 11.52,
+            "lines": 1,
+            "expectedLines": 1,
+            "wrapped": false,
+            "hOverflow": false,
+            "clippedByFrame": false,
+            "outsideReadingPanel": null
+          },
+          {
+            "kind": "range-hint",
+            "selector": "span.",
+            "text": "dry",
+            "fontSizePx": 11.52,
+            "lines": 1,
+            "expectedLines": 1,
+            "wrapped": false,
+            "hOverflow": false,
+            "clippedByFrame": null,
+            "outsideReadingPanel": null
+          },
+          {
+            "kind": "range-hint",
+            "selector": "span.",
+            "text": "wet",
+            "fontSizePx": 11.52,
+            "lines": 1,
+            "expectedLines": 1,
+            "wrapped": false,
+            "hOverflow": false,
+            "clippedByFrame": null,
+            "outsideReadingPanel": null
+          },
+          {
+            "kind": "range-hint",
+            "selector": "span.",
+            "text": "0 h",
+            "fontSizePx": 11.52,
+            "lines": 1,
+            "expectedLines": 1,
+            "wrapped": false,
+            "hOverflow": false,
+            "clippedByFrame": null,
+            "outsideReadingPanel": null
+          },
+          {
+            "kind": "range-hint",
+            "selector": "span.",
+            "text": "24 h",
+            "fontSizePx": 11.52,
+            "lines": 1,
+            "expectedLines": 1,
+            "wrapped": false,
+            "hOverflow": false,
+            "clippedByFrame": null,
+            "outsideReadingPanel": null
+          },
+          {
+            "kind": "range-hint",
+            "selector": "span.",
+            "text": "acidic",
+            "fontSizePx": 11.52,
+            "lines": 1,
+            "expectedLines": 1,
+            "wrapped": false,
+            "hOverflow": false,
+            "clippedByFrame": null,
+            "outsideReadingPanel": null
+          },
+          {
+            "kind": "range-hint",
+            "selector": "span.",
+            "text": "alkaline",
+            "fontSizePx": 11.52,
+            "lines": 1,
+            "expectedLines": 1,
+            "wrapped": false,
+            "hOverflow": false,
+            "clippedByFrame": null,
+            "outsideReadingPanel": null
+          },
+          {
+            "kind": "range-hint",
+            "selector": "span.",
+            "text": "light",
+            "fontSizePx": 11.52,
+            "lines": 1,
+            "expectedLines": 1,
+            "wrapped": false,
+            "hOverflow": false,
+            "clippedByFrame": null,
+            "outsideReadingPanel": null
+          },
+          {
+            "kind": "range-hint",
+            "selector": "span.",
+            "text": "heavy",
+            "fontSizePx": 11.52,
+            "lines": 1,
+            "expectedLines": 1,
+            "wrapped": false,
+            "hOverflow": false,
+            "clippedByFrame": null,
+            "outsideReadingPanel": null
+          },
+          {
+            "kind": "chamber-footer-label",
+            "selector": "span.mono-label",
+            "text": "SPECIMEN / CURRENT GROWTH",
+            "fontSizePx": 11.52,
+            "lines": 1,
+            "expectedLines": 1,
+            "wrapped": false,
+            "hOverflow": false,
+            "clippedByFrame": false,
+            "outsideReadingPanel": null
+          },
+          {
+            "kind": "chamber-footer-label",
+            "selector": "span.mono-label",
+            "text": "MODEL / SEEDED BRANCHING",
+            "fontSizePx": 11.52,
+            "lines": 1,
+            "expectedLines": 1,
+            "wrapped": false,
+            "hOverflow": false,
+            "clippedByFrame": false,
+            "outsideReadingPanel": null
+          },
+          {
+            "kind": "reading-term",
+            "selector": "dt.",
+            "text": "Height",
+            "fontSizePx": 11.52,
+            "lines": 1,
+            "expectedLines": 1,
+            "wrapped": false,
+            "hOverflow": false,
+            "clippedByFrame": null,
+            "outsideReadingPanel": false
+          },
+          {
+            "kind": "reading-term",
+            "selector": "dt.",
+            "text": "Branching",
+            "fontSizePx": 11.52,
+            "lines": 1,
+            "expectedLines": 1,
+            "wrapped": false,
+            "hOverflow": false,
+            "clippedByFrame": null,
+            "outsideReadingPanel": false
+          },
+          {
+            "kind": "reading-term",
+            "selector": "dt.",
+            "text": "Leaf density",
+            "fontSizePx": 11.52,
+            "lines": 1,
+            "expectedLines": 1,
+            "wrapped": false,
+            "hOverflow": false,
+            "clippedByFrame": null,
+            "outsideReadingPanel": false
+          },
+          {
+            "kind": "reading-term",
+            "selector": "dt.",
+            "text": "Lean",
+            "fontSizePx": 11.52,
+            "lines": 1,
+            "expectedLines": 1,
+            "wrapped": false,
+            "hOverflow": false,
+            "clippedByFrame": null,
+            "outsideReadingPanel": false
+          },
+          {
+            "kind": "reading-value",
+            "selector": "dd.",
+            "text": "medium",
+            "fontSizePx": 13.12,
+            "lines": 1,
+            "expectedLines": 1,
+            "wrapped": false,
+            "hOverflow": false,
+            "clippedByFrame": null,
+            "outsideReadingPanel": false
+          },
+          {
+            "kind": "reading-value",
+            "selector": "dd.",
+            "text": "balanced",
+            "fontSizePx": 13.12,
+            "lines": 1,
+            "expectedLines": 1,
+            "wrapped": false,
+            "hOverflow": false,
+            "clippedByFrame": null,
+            "outsideReadingPanel": false
+          },
+          {
+            "kind": "reading-value",
+            "selector": "dd.",
+            "text": "medium",
+            "fontSizePx": 13.12,
+            "lines": 1,
+            "expectedLines": 1,
+            "wrapped": false,
+            "hOverflow": false,
+            "clippedByFrame": null,
+            "outsideReadingPanel": false
+          },
+          {
+            "kind": "reading-value",
+            "selector": "dd.",
+            "text": "upright (1°)",
+            "fontSizePx": 13.12,
+            "lines": 1,
+            "expectedLines": 1,
+            "wrapped": false,
+            "hOverflow": false,
+            "clippedByFrame": null,
+            "outsideReadingPanel": false
+          },
+          {
+            "kind": "masthead-local-note",
+            "selector": "p.local-note",
+            "text": "No cloud storageseeded output",
+            "fontSizePx": 11.52,
+            "lines": 2,
+            "expectedLines": 2,
+            "wrapped": false,
+            "hOverflow": false,
+            "clippedByFrame": null,
+            "outsideReadingPanel": null
+          },
+          {
+            "kind": "environment-line",
+            "selector": "p.reading-environment",
+            "text": "Humidity 55% · Sunlight 12 h · Soil pH 6.5 ·",
+            "fontSizePx": 12.16,
+            "lines": 2,
+            "expectedLines": null,
+            "wrapped": false,
+            "hOverflow": false,
+            "clippedByFrame": null,
+            "outsideReadingPanel": null
+          },
+          {
+            "kind": "live-value",
+            "selector": "output.",
+            "text": "55%",
+            "fontSizePx": 13.12,
+            "lines": 1,
+            "expectedLines": 1,
+            "wrapped": false,
+            "hOverflow": false,
+            "clippedByFrame": null,
+            "outsideReadingPanel": null
+          },
+          {
+            "kind": "live-value",
+            "selector": "output.",
+            "text": "12 h",
+            "fontSizePx": 13.12,
+            "lines": 1,
+            "expectedLines": 1,
+            "wrapped": false,
+            "hOverflow": false,
+            "clippedByFrame": null,
+            "outsideReadingPanel": null
+          },
+          {
+            "kind": "live-value",
+            "selector": "output.",
+            "text": "pH 6.5",
+            "fontSizePx": 13.12,
+            "lines": 1,
+            "expectedLines": 1,
+            "wrapped": false,
+            "hOverflow": false,
+            "clippedByFrame": null,
+            "outsideReadingPanel": null
+          },
+          {
+            "kind": "live-value",
+            "selector": "output.",
+            "text": "1.0 g",
+            "fontSizePx": 13.12,
+            "lines": 1,
+            "expectedLines": 1,
+            "wrapped": false,
+            "hOverflow": false,
+            "clippedByFrame": null,
+            "outsideReadingPanel": null
+          }
+        ],
+        "docHorizontalOverflow": 0,
+        "viewport": {
+          "w": 390,
+          "h": 844
+        }
+      },
+      "elements": [
+        {
+          "selector": "p.eyebrow",
+          "text": "LOCAL GROWTH STUDY · 001",
+          "fontSizePx": 11.52,
+          "fontFamily": "ui-monospace",
+          "lineHeightPx": null,
+          "rect": {
+            "x": 12,
+            "y": 20,
+            "w": 357,
+            "h": 14
+          },
+          "lines": 1
+        },
+        {
+          "selector": "h1",
+          "text": "The Algorithmic Terrarium",
+          "fontSizePx": 54.6,
+          "fontFamily": "\"Avenir Next\"",
+          "lineHeightPx": 51.3,
+          "rect": {
+            "x": 12,
+            "y": 46,
+            "w": 357,
+            "h": 154
+          },
+          "lines": 3
+        },
+        {
+          "selector": "p.masthead-copy",
+          "text": "Change the atmosphere. Grow what it beco",
+          "fontSizePx": 16,
+          "fontFamily": "\"Avenir Next\"",
+          "lineHeightPx": 24.8,
+          "rect": {
+            "x": 12,
+            "y": 216,
+            "w": 357,
+            "h": 25
+          },
+          "lines": 1
+        },
+        {
+          "selector": "p.local-note",
+          "text": "No cloud storageseeded output",
+          "fontSizePx": 11.52,
+          "fontFamily": "ui-monospace",
+          "lineHeightPx": 17.9,
+          "rect": {
+            "x": 12,
+            "y": 265,
+            "w": 133,
+            "h": 36
+          },
+          "lines": 2
+        },
+        {
+          "selector": "span",
+          "text": "seeded output",
+          "fontSizePx": 11.52,
+          "fontFamily": "ui-monospace",
+          "lineHeightPx": 17.9,
+          "rect": {
+            "x": 12,
+            "y": 284,
+            "w": 108,
+            "h": 14
+          },
+          "lines": 1
+        },
+        {
+          "selector": "p.eyebrow",
+          "text": "GROWTH CHAMBER",
+          "fontSizePx": 11.52,
+          "fontFamily": "ui-monospace",
+          "lineHeightPx": null,
+          "rect": {
+            "x": 37,
+            "y": 353,
+            "w": 163,
+            "h": 14
+          },
+          "lines": 1
+        },
+        {
+          "selector": "h2",
+          "text": "Current specimen",
+          "fontSizePx": 21.6,
+          "fontFamily": "\"Avenir Next\"",
+          "lineHeightPx": 22.7,
+          "rect": {
+            "x": 37,
+            "y": 379,
+            "w": 163,
+            "h": 23
+          },
+          "lines": 1
+        },
+        {
+          "selector": "span.status-tag",
+          "text": "ready",
+          "fontSizePx": 11.52,
+          "fontFamily": "ui-monospace",
+          "lineHeightPx": null,
+          "rect": {
+            "x": 292,
+            "y": 363,
+            "w": 61,
+            "h": 30
+          },
+          "lines": 1
+        },
+        {
+          "selector": "canvas",
+          "text": "A generated plant with medium height, ba",
+          "fontSizePx": 16,
+          "fontFamily": "\"Avenir Next\"",
+          "lineHeightPx": null,
+          "rect": {
+            "x": 42,
+            "y": 434,
+            "w": 306,
+            "h": 306
+          },
+          "lines": 0
+        },
+        {
+          "selector": "span.mono-label",
+          "text": "SPECIMEN / CURRENT GROWTH",
+          "fontSizePx": 11.52,
+          "fontFamily": "ui-monospace",
+          "lineHeightPx": null,
+          "rect": {
+            "x": 37,
+            "y": 750,
+            "w": 207,
+            "h": 14
+          },
+          "lines": 1
+        },
+        {
+          "selector": "span.mono-label",
+          "text": "MODEL / SEEDED BRANCHING",
+          "fontSizePx": 11.52,
+          "fontFamily": "ui-monospace",
+          "lineHeightPx": null,
+          "rect": {
+            "x": 37,
+            "y": 783,
+            "w": 199,
+            "h": 14
+          },
+          "lines": 1
+        },
+        {
+          "selector": "p.eyebrow",
+          "text": "PLANT READING",
+          "fontSizePx": 11.52,
+          "fontFamily": "ui-monospace",
+          "lineHeightPx": null,
+          "rect": {
+            "x": 37,
+            "y": 841,
+            "w": 316,
+            "h": 14
+          },
+          "lines": 1
+        },
+        {
+          "selector": "h2",
+          "text": "Medium specimen",
+          "fontSizePx": 21.6,
+          "fontFamily": "\"Avenir Next\"",
+          "lineHeightPx": 22.7,
+          "rect": {
+            "x": 37,
+            "y": 867,
+            "w": 316,
+            "h": 23
+          },
+          "lines": 1
+        },
+        {
+          "selector": "p.reading-copy",
+          "text": "This stylized visual interpretation show",
+          "fontSizePx": 14.4,
+          "fontFamily": "\"Avenir Next\"",
+          "lineHeightPx": 22.3,
+          "rect": {
+            "x": 37,
+            "y": 906,
+            "w": 316,
+            "h": 67
+          },
+          "lines": 3
+        },
+        {
+          "selector": "p.reading-environment",
+          "text": "Humidity 55% · Sunlight 12 h · Soil pH 6",
+          "fontSizePx": 12.16,
+          "fontFamily": "ui-monospace",
+          "lineHeightPx": 18.2,
+          "rect": {
+            "x": 37,
+            "y": 989,
+            "w": 316,
+            "h": 36
+          },
+          "lines": 2
+        },
+        {
+          "selector": "dt",
+          "text": "Height",
+          "fontSizePx": 11.52,
+          "fontFamily": "ui-monospace",
+          "lineHeightPx": null,
+          "rect": {
+            "x": 37,
+            "y": 1052,
+            "w": 152,
+            "h": 14
+          },
+          "lines": 1
+        },
+        {
+          "selector": "dd",
+          "text": "medium",
+          "fontSizePx": 13.12,
+          "fontFamily": "ui-monospace",
+          "lineHeightPx": null,
+          "rect": {
+            "x": 37,
+            "y": 1072,
+            "w": 152,
+            "h": 15
+          },
+          "lines": 1
+        },
+        {
+          "selector": "dt",
+          "text": "Branching",
+          "fontSizePx": 11.52,
+          "fontFamily": "ui-monospace",
+          "lineHeightPx": null,
+          "rect": {
+            "x": 201,
+            "y": 1052,
+            "w": 152,
+            "h": 14
+          },
+          "lines": 1
+        },
+        {
+          "selector": "dd",
+          "text": "balanced",
+          "fontSizePx": 13.12,
+          "fontFamily": "ui-monospace",
+          "lineHeightPx": null,
+          "rect": {
+            "x": 201,
+            "y": 1072,
+            "w": 152,
+            "h": 15
+          },
+          "lines": 1
+        },
+        {
+          "selector": "dt",
+          "text": "Leaf density",
+          "fontSizePx": 11.52,
+          "fontFamily": "ui-monospace",
+          "lineHeightPx": null,
+          "rect": {
+            "x": 37,
+            "y": 1110,
+            "w": 152,
+            "h": 14
+          },
+          "lines": 1
+        },
+        {
+          "selector": "dd",
+          "text": "medium",
+          "fontSizePx": 13.12,
+          "fontFamily": "ui-monospace",
+          "lineHeightPx": null,
+          "rect": {
+            "x": 37,
+            "y": 1130,
+            "w": 152,
+            "h": 15
+          },
+          "lines": 1
+        },
+        {
+          "selector": "dt",
+          "text": "Lean",
+          "fontSizePx": 11.52,
+          "fontFamily": "ui-monospace",
+          "lineHeightPx": null,
+          "rect": {
+            "x": 201,
+            "y": 1110,
+            "w": 152,
+            "h": 14
+          },
+          "lines": 1
+        },
+        {
+          "selector": "dd",
+          "text": "upright (1°)",
+          "fontSizePx": 13.12,
+          "fontFamily": "ui-monospace",
+          "lineHeightPx": null,
+          "rect": {
+            "x": 201,
+            "y": 1130,
+            "w": 152,
+            "h": 15
+          },
+          "lines": 1
+        },
+        {
+          "selector": "p.eyebrow",
+          "text": "ENVIRONMENT",
+          "fontSizePx": 11.52,
+          "fontFamily": "ui-monospace",
+          "lineHeightPx": null,
+          "rect": {
+            "x": 37,
+            "y": 1211,
+            "w": 316,
+            "h": 14
+          },
+          "lines": 1
+        },
+        {
+          "selector": "h2",
+          "text": "Set the conditions",
+          "fontSizePx": 21.6,
+          "fontFamily": "\"Avenir Next\"",
+          "lineHeightPx": 22.7,
+          "rect": {
+            "x": 37,
+            "y": 1237,
+            "w": 316,
+            "h": 23
+          },
+          "lines": 1
+        },
+        {
+          "selector": "p",
+          "text": "Adjust the atmosphere, then grow a new s",
+          "fontSizePx": 14.4,
+          "fontFamily": "\"Avenir Next\"",
+          "lineHeightPx": 22.3,
+          "rect": {
+            "x": 37,
+            "y": 1276,
+            "w": 316,
+            "h": 45
+          },
+          "lines": 2
+        },
+        {
+          "selector": "label",
+          "text": "Humidity",
+          "fontSizePx": 14.4,
+          "fontFamily": "\"Avenir Next\"",
+          "lineHeightPx": null,
+          "rect": {
+            "x": 37,
+            "y": 1369,
+            "w": 59,
+            "h": 19
+          },
+          "lines": 1
+        },
+        {
+          "selector": "output",
+          "text": "55%",
+          "fontSizePx": 13.12,
+          "fontFamily": "ui-monospace",
+          "lineHeightPx": null,
+          "rect": {
+            "x": 329,
+            "y": 1371,
+            "w": 24,
+            "h": 15
+          },
+          "lines": 1
+        },
+        {
+          "selector": "span",
+          "text": "dry",
+          "fontSizePx": 11.52,
+          "fontFamily": "ui-monospace",
+          "lineHeightPx": null,
+          "rect": {
+            "x": 37,
+            "y": 1438,
+            "w": 24,
+            "h": 14
+          },
+          "lines": 1
+        },
+        {
+          "selector": "span",
+          "text": "wet",
+          "fontSizePx": 11.52,
+          "fontFamily": "ui-monospace",
+          "lineHeightPx": null,
+          "rect": {
+            "x": 329,
+            "y": 1438,
+            "w": 24,
+            "h": 14
+          },
+          "lines": 1
+        },
+        {
+          "selector": "label",
+          "text": "Sunlight hours",
+          "fontSizePx": 14.4,
+          "fontFamily": "\"Avenir Next\"",
+          "lineHeightPx": null,
+          "rect": {
+            "x": 37,
+            "y": 1501,
+            "w": 95,
+            "h": 19
+          },
+          "lines": 1
+        },
+        {
+          "selector": "output",
+          "text": "12 h",
+          "fontSizePx": 13.12,
+          "fontFamily": "ui-monospace",
+          "lineHeightPx": null,
+          "rect": {
+            "x": 322,
+            "y": 1503,
+            "w": 32,
+            "h": 15
+          },
+          "lines": 1
+        },
+        {
+          "selector": "span",
+          "text": "0 h",
+          "fontSizePx": 11.52,
+          "fontFamily": "ui-monospace",
+          "lineHeightPx": null,
+          "rect": {
+            "x": 37,
+            "y": 1570,
+            "w": 24,
+            "h": 14
+          },
+          "lines": 1
+        },
+        {
+          "selector": "span",
+          "text": "24 h",
+          "fontSizePx": 11.52,
+          "fontFamily": "ui-monospace",
+          "lineHeightPx": null,
+          "rect": {
+            "x": 322,
+            "y": 1570,
+            "w": 31,
+            "h": 14
+          },
+          "lines": 1
+        },
+        {
+          "selector": "label",
+          "text": "Soil acidity",
+          "fontSizePx": 14.4,
+          "fontFamily": "\"Avenir Next\"",
+          "lineHeightPx": null,
+          "rect": {
+            "x": 37,
+            "y": 1633,
+            "w": 71,
+            "h": 19
+          },
+          "lines": 1
+        },
+        {
+          "selector": "output",
+          "text": "pH 6.5",
+          "fontSizePx": 13.12,
+          "fontFamily": "ui-monospace",
+          "lineHeightPx": null,
+          "rect": {
+            "x": 306,
+            "y": 1635,
+            "w": 47,
+            "h": 15
+          },
+          "lines": 1
+        },
+        {
+          "selector": "span",
+          "text": "acidic",
+          "fontSizePx": 11.52,
+          "fontFamily": "ui-monospace",
+          "lineHeightPx": null,
+          "rect": {
+            "x": 37,
+            "y": 1702,
+            "w": 47,
+            "h": 14
+          },
+          "lines": 1
+        },
+        {
+          "selector": "span",
+          "text": "alkaline",
+          "fontSizePx": 11.52,
+          "fontFamily": "ui-monospace",
+          "lineHeightPx": null,
+          "rect": {
+            "x": 290,
+            "y": 1702,
+            "w": 63,
+            "h": 14
+          },
+          "lines": 1
+        },
+        {
+          "selector": "label",
+          "text": "Gravity",
+          "fontSizePx": 14.4,
+          "fontFamily": "\"Avenir Next\"",
+          "lineHeightPx": null,
+          "rect": {
+            "x": 37,
+            "y": 1765,
+            "w": 46,
+            "h": 19
+          },
+          "lines": 1
+        },
+        {
+          "selector": "output",
+          "text": "1.0 g",
+          "fontSizePx": 13.12,
+          "fontFamily": "ui-monospace",
+          "lineHeightPx": null,
+          "rect": {
+            "x": 314,
+            "y": 1767,
+            "w": 39,
+            "h": 15
+          },
+          "lines": 1
+        },
+        {
+          "selector": "span",
+          "text": "light",
+          "fontSizePx": 11.52,
+          "fontFamily": "ui-monospace",
+          "lineHeightPx": null,
+          "rect": {
+            "x": 37,
+            "y": 1834,
+            "w": 39,
+            "h": 14
+          },
+          "lines": 1
+        },
+        {
+          "selector": "span",
+          "text": "heavy",
+          "fontSizePx": 11.52,
+          "fontFamily": "ui-monospace",
+          "lineHeightPx": null,
+          "rect": {
+            "x": 314,
+            "y": 1834,
+            "w": 39,
+            "h": 14
+          },
+          "lines": 1
+        },
+        {
+          "selector": "button.primary-action",
+          "text": "Grow plant ↗",
+          "fontSizePx": 16,
+          "fontFamily": "\"Avenir Next\"",
+          "lineHeightPx": null,
+          "rect": {
+            "x": 37,
+            "y": 1897,
+            "w": 316,
+            "h": 48
+          },
+          "lines": 1
+        },
+        {
+          "selector": "span",
+          "text": "↗",
+          "fontSizePx": 16,
+          "fontFamily": "\"Avenir Next\"",
+          "lineHeightPx": null,
+          "rect": {
+            "x": 324,
+            "y": 1910,
+            "w": 12,
+            "h": 22
+          },
+          "lines": 1
+        },
+        {
+          "selector": "button.secondary-action",
+          "text": "Reset defaults",
+          "fontSizePx": 16,
+          "fontFamily": "\"Avenir Next\"",
+          "lineHeightPx": null,
+          "rect": {
+            "x": 37,
+            "y": 1955,
+            "w": 316,
+            "h": 48
+          },
+          "lines": 1
+        },
+        {
+          "selector": "p.status-message",
+          "text": "Ready to grow a new specimen.",
+          "fontSizePx": 12.16,
+          "fontFamily": "\"Avenir Next\"",
+          "lineHeightPx": 17,
+          "rect": {
+            "x": 37,
+            "y": 2015,
+            "w": 316,
+            "h": 17
+          },
+          "lines": 1
+        }
+      ]
+    },
+    "min-320": {
+      "viewport": {
+        "width": 320,
+        "height": 800
+      },
+      "textElementCount": 46,
+      "minFontSizePx": 11.52,
+      "minElements": [
+        {
+          "selector": "p.eyebrow",
+          "text": "LOCAL GROWTH STUDY · 001"
+        },
+        {
+          "selector": "p.local-note",
+          "text": "No cloud storageseeded output"
+        },
+        {
+          "selector": "span",
+          "text": "seeded output"
+        },
+        {
+          "selector": "p.eyebrow",
+          "text": "GROWTH CHAMBER"
+        },
+        {
+          "selector": "span.status-tag",
+          "text": "ready"
+        },
+        {
+          "selector": "span.mono-label",
+          "text": "SPECIMEN / CURRENT GROWTH"
+        },
+        {
+          "selector": "span.mono-label",
+          "text": "MODEL / SEEDED BRANCHING"
+        },
+        {
+          "selector": "p.eyebrow",
+          "text": "PLANT READING"
+        },
+        {
+          "selector": "dt",
+          "text": "Height"
+        },
+        {
+          "selector": "dt",
+          "text": "Branching"
+        },
+        {
+          "selector": "dt",
+          "text": "Leaf density"
+        },
+        {
+          "selector": "dt",
+          "text": "Lean"
+        },
+        {
+          "selector": "p.eyebrow",
+          "text": "ENVIRONMENT"
+        },
+        {
+          "selector": "span",
+          "text": "dry"
+        },
+        {
+          "selector": "span",
+          "text": "wet"
+        },
+        {
+          "selector": "span",
+          "text": "0 h"
+        },
+        {
+          "selector": "span",
+          "text": "24 h"
+        },
+        {
+          "selector": "span",
+          "text": "acidic"
+        },
+        {
+          "selector": "span",
+          "text": "alkaline"
+        },
+        {
+          "selector": "span",
+          "text": "light"
+        },
+        {
+          "selector": "span",
+          "text": "heavy"
+        }
+      ],
+      "sizeHistogram": [
+        {
+          "px": 11.52,
+          "n": 21
+        },
+        {
+          "px": 12.16,
+          "n": 2
+        },
+        {
+          "px": 13.12,
+          "n": 8
+        },
+        {
+          "px": 14.4,
+          "n": 6
+        },
+        {
+          "px": 16,
+          "n": 5
+        },
+        {
+          "px": 21.6,
+          "n": 3
+        },
+        {
+          "px": 44.8,
+          "n": 1
+        }
+      ],
+      "undersized": [],
+      "named": {
+        "checks": [
+          {
+            "kind": "eyebrow",
+            "selector": "p.eyebrow",
+            "text": "LOCAL GROWTH STUDY · 001",
+            "fontSizePx": 11.52,
+            "lines": 1,
+            "expectedLines": 1,
+            "wrapped": false,
+            "hOverflow": false,
+            "clippedByFrame": null,
+            "outsideReadingPanel": null
+          },
+          {
+            "kind": "eyebrow",
+            "selector": "p.eyebrow",
+            "text": "GROWTH CHAMBER",
+            "fontSizePx": 11.52,
+            "lines": 1,
+            "expectedLines": 1,
+            "wrapped": false,
+            "hOverflow": false,
+            "clippedByFrame": false,
+            "outsideReadingPanel": null
+          },
+          {
+            "kind": "eyebrow",
+            "selector": "p.eyebrow",
+            "text": "PLANT READING",
+            "fontSizePx": 11.52,
+            "lines": 1,
+            "expectedLines": 1,
+            "wrapped": false,
+            "hOverflow": false,
+            "clippedByFrame": null,
+            "outsideReadingPanel": false
+          },
+          {
+            "kind": "eyebrow",
+            "selector": "p.eyebrow",
+            "text": "ENVIRONMENT",
+            "fontSizePx": 11.52,
+            "lines": 1,
+            "expectedLines": 1,
+            "wrapped": false,
+            "hOverflow": false,
+            "clippedByFrame": null,
+            "outsideReadingPanel": null
+          },
+          {
+            "kind": "status-tag",
+            "selector": "span.status-tag",
+            "text": "ready",
+            "fontSizePx": 11.52,
+            "lines": 1,
+            "expectedLines": 1,
+            "wrapped": false,
+            "hOverflow": false,
+            "clippedByFrame": false,
+            "outsideReadingPanel": null
+          },
+          {
+            "kind": "range-hint",
+            "selector": "span.",
+            "text": "dry",
+            "fontSizePx": 11.52,
+            "lines": 1,
+            "expectedLines": 1,
+            "wrapped": false,
+            "hOverflow": false,
+            "clippedByFrame": null,
+            "outsideReadingPanel": null
+          },
+          {
+            "kind": "range-hint",
+            "selector": "span.",
+            "text": "wet",
+            "fontSizePx": 11.52,
+            "lines": 1,
+            "expectedLines": 1,
+            "wrapped": false,
+            "hOverflow": false,
+            "clippedByFrame": null,
+            "outsideReadingPanel": null
+          },
+          {
+            "kind": "range-hint",
+            "selector": "span.",
+            "text": "0 h",
+            "fontSizePx": 11.52,
+            "lines": 1,
+            "expectedLines": 1,
+            "wrapped": false,
+            "hOverflow": false,
+            "clippedByFrame": null,
+            "outsideReadingPanel": null
+          },
+          {
+            "kind": "range-hint",
+            "selector": "span.",
+            "text": "24 h",
+            "fontSizePx": 11.52,
+            "lines": 1,
+            "expectedLines": 1,
+            "wrapped": false,
+            "hOverflow": false,
+            "clippedByFrame": null,
+            "outsideReadingPanel": null
+          },
+          {
+            "kind": "range-hint",
+            "selector": "span.",
+            "text": "acidic",
+            "fontSizePx": 11.52,
+            "lines": 1,
+            "expectedLines": 1,
+            "wrapped": false,
+            "hOverflow": false,
+            "clippedByFrame": null,
+            "outsideReadingPanel": null
+          },
+          {
+            "kind": "range-hint",
+            "selector": "span.",
+            "text": "alkaline",
+            "fontSizePx": 11.52,
+            "lines": 1,
+            "expectedLines": 1,
+            "wrapped": false,
+            "hOverflow": false,
+            "clippedByFrame": null,
+            "outsideReadingPanel": null
+          },
+          {
+            "kind": "range-hint",
+            "selector": "span.",
+            "text": "light",
+            "fontSizePx": 11.52,
+            "lines": 1,
+            "expectedLines": 1,
+            "wrapped": false,
+            "hOverflow": false,
+            "clippedByFrame": null,
+            "outsideReadingPanel": null
+          },
+          {
+            "kind": "range-hint",
+            "selector": "span.",
+            "text": "heavy",
+            "fontSizePx": 11.52,
+            "lines": 1,
+            "expectedLines": 1,
+            "wrapped": false,
+            "hOverflow": false,
+            "clippedByFrame": null,
+            "outsideReadingPanel": null
+          },
+          {
+            "kind": "chamber-footer-label",
+            "selector": "span.mono-label",
+            "text": "SPECIMEN / CURRENT GROWTH",
+            "fontSizePx": 11.52,
+            "lines": 1,
+            "expectedLines": 1,
+            "wrapped": false,
+            "hOverflow": false,
+            "clippedByFrame": false,
+            "outsideReadingPanel": null
+          },
+          {
+            "kind": "chamber-footer-label",
+            "selector": "span.mono-label",
+            "text": "MODEL / SEEDED BRANCHING",
+            "fontSizePx": 11.52,
+            "lines": 1,
+            "expectedLines": 1,
+            "wrapped": false,
+            "hOverflow": false,
+            "clippedByFrame": false,
+            "outsideReadingPanel": null
+          },
+          {
+            "kind": "reading-term",
+            "selector": "dt.",
+            "text": "Height",
+            "fontSizePx": 11.52,
+            "lines": 1,
+            "expectedLines": 1,
+            "wrapped": false,
+            "hOverflow": false,
+            "clippedByFrame": null,
+            "outsideReadingPanel": false
+          },
+          {
+            "kind": "reading-term",
+            "selector": "dt.",
+            "text": "Branching",
+            "fontSizePx": 11.52,
+            "lines": 1,
+            "expectedLines": 1,
+            "wrapped": false,
+            "hOverflow": false,
+            "clippedByFrame": null,
+            "outsideReadingPanel": false
+          },
+          {
+            "kind": "reading-term",
+            "selector": "dt.",
+            "text": "Leaf density",
+            "fontSizePx": 11.52,
+            "lines": 1,
+            "expectedLines": 1,
+            "wrapped": false,
+            "hOverflow": false,
+            "clippedByFrame": null,
+            "outsideReadingPanel": false
+          },
+          {
+            "kind": "reading-term",
+            "selector": "dt.",
+            "text": "Lean",
+            "fontSizePx": 11.52,
+            "lines": 1,
+            "expectedLines": 1,
+            "wrapped": false,
+            "hOverflow": false,
+            "clippedByFrame": null,
+            "outsideReadingPanel": false
+          },
+          {
+            "kind": "reading-value",
+            "selector": "dd.",
+            "text": "medium",
+            "fontSizePx": 13.12,
+            "lines": 1,
+            "expectedLines": 1,
+            "wrapped": false,
+            "hOverflow": false,
+            "clippedByFrame": null,
+            "outsideReadingPanel": false
+          },
+          {
+            "kind": "reading-value",
+            "selector": "dd.",
+            "text": "balanced",
+            "fontSizePx": 13.12,
+            "lines": 1,
+            "expectedLines": 1,
+            "wrapped": false,
+            "hOverflow": false,
+            "clippedByFrame": null,
+            "outsideReadingPanel": false
+          },
+          {
+            "kind": "reading-value",
+            "selector": "dd.",
+            "text": "medium",
+            "fontSizePx": 13.12,
+            "lines": 1,
+            "expectedLines": 1,
+            "wrapped": false,
+            "hOverflow": false,
+            "clippedByFrame": null,
+            "outsideReadingPanel": false
+          },
+          {
+            "kind": "reading-value",
+            "selector": "dd.",
+            "text": "upright (1°)",
+            "fontSizePx": 13.12,
+            "lines": 1,
+            "expectedLines": 1,
+            "wrapped": false,
+            "hOverflow": false,
+            "clippedByFrame": null,
+            "outsideReadingPanel": false
+          },
+          {
+            "kind": "masthead-local-note",
+            "selector": "p.local-note",
+            "text": "No cloud storageseeded output",
+            "fontSizePx": 11.52,
+            "lines": 2,
+            "expectedLines": 2,
+            "wrapped": false,
+            "hOverflow": false,
+            "clippedByFrame": null,
+            "outsideReadingPanel": null
+          },
+          {
+            "kind": "environment-line",
+            "selector": "p.reading-environment",
+            "text": "Humidity 55% · Sunlight 12 h · Soil pH 6.5 ·",
+            "fontSizePx": 12.16,
+            "lines": 2,
+            "expectedLines": null,
+            "wrapped": false,
+            "hOverflow": false,
+            "clippedByFrame": null,
+            "outsideReadingPanel": null
+          },
+          {
+            "kind": "live-value",
+            "selector": "output.",
+            "text": "55%",
+            "fontSizePx": 13.12,
+            "lines": 1,
+            "expectedLines": 1,
+            "wrapped": false,
+            "hOverflow": false,
+            "clippedByFrame": null,
+            "outsideReadingPanel": null
+          },
+          {
+            "kind": "live-value",
+            "selector": "output.",
+            "text": "12 h",
+            "fontSizePx": 13.12,
+            "lines": 1,
+            "expectedLines": 1,
+            "wrapped": false,
+            "hOverflow": false,
+            "clippedByFrame": null,
+            "outsideReadingPanel": null
+          },
+          {
+            "kind": "live-value",
+            "selector": "output.",
+            "text": "pH 6.5",
+            "fontSizePx": 13.12,
+            "lines": 1,
+            "expectedLines": 1,
+            "wrapped": false,
+            "hOverflow": false,
+            "clippedByFrame": null,
+            "outsideReadingPanel": null
+          },
+          {
+            "kind": "live-value",
+            "selector": "output.",
+            "text": "1.0 g",
+            "fontSizePx": 13.12,
+            "lines": 1,
+            "expectedLines": 1,
+            "wrapped": false,
+            "hOverflow": false,
+            "clippedByFrame": null,
+            "outsideReadingPanel": null
+          }
+        ],
+        "docHorizontalOverflow": 0,
+        "viewport": {
+          "w": 320,
+          "h": 800
+        }
+      },
+      "elements": [
+        {
+          "selector": "p.eyebrow",
+          "text": "LOCAL GROWTH STUDY · 001",
+          "fontSizePx": 11.52,
+          "fontFamily": "ui-monospace",
+          "lineHeightPx": null,
+          "rect": {
+            "x": 12,
+            "y": 20,
+            "w": 296,
+            "h": 14
+          },
+          "lines": 1
+        },
+        {
+          "selector": "h1",
+          "text": "The Algorithmic Terrarium",
+          "fontSizePx": 44.8,
+          "fontFamily": "\"Avenir Next\"",
+          "lineHeightPx": 42.1,
+          "rect": {
+            "x": 12,
+            "y": 46,
+            "w": 293,
+            "h": 126
+          },
+          "lines": 3
+        },
+        {
+          "selector": "p.masthead-copy",
+          "text": "Change the atmosphere. Grow what it beco",
+          "fontSizePx": 16,
+          "fontFamily": "\"Avenir Next\"",
+          "lineHeightPx": 24.8,
+          "rect": {
+            "x": 12,
+            "y": 188,
+            "w": 296,
+            "h": 50
+          },
+          "lines": 2
+        },
+        {
+          "selector": "p.local-note",
+          "text": "No cloud storageseeded output",
+          "fontSizePx": 11.52,
+          "fontFamily": "ui-monospace",
+          "lineHeightPx": 17.9,
+          "rect": {
+            "x": 12,
+            "y": 262,
+            "w": 133,
+            "h": 36
+          },
+          "lines": 2
+        },
+        {
+          "selector": "span",
+          "text": "seeded output",
+          "fontSizePx": 11.52,
+          "fontFamily": "ui-monospace",
+          "lineHeightPx": 17.9,
+          "rect": {
+            "x": 12,
+            "y": 281,
+            "w": 108,
+            "h": 14
+          },
+          "lines": 1
+        },
+        {
+          "selector": "p.eyebrow",
+          "text": "GROWTH CHAMBER",
+          "fontSizePx": 11.52,
+          "fontFamily": "ui-monospace",
+          "lineHeightPx": null,
+          "rect": {
+            "x": 37,
+            "y": 351,
+            "w": 163,
+            "h": 14
+          },
+          "lines": 1
+        },
+        {
+          "selector": "h2",
+          "text": "Current specimen",
+          "fontSizePx": 21.6,
+          "fontFamily": "\"Avenir Next\"",
+          "lineHeightPx": 22.7,
+          "rect": {
+            "x": 37,
+            "y": 377,
+            "w": 163,
+            "h": 23
+          },
+          "lines": 1
+        },
+        {
+          "selector": "span.status-tag",
+          "text": "ready",
+          "fontSizePx": 11.52,
+          "fontFamily": "ui-monospace",
+          "lineHeightPx": null,
+          "rect": {
+            "x": 222,
+            "y": 360,
+            "w": 61,
+            "h": 30
+          },
+          "lines": 1
+        },
+        {
+          "selector": "canvas",
+          "text": "A generated plant with medium height, ba",
+          "fontSizePx": 16,
+          "fontFamily": "\"Avenir Next\"",
+          "lineHeightPx": null,
+          "rect": {
+            "x": 37,
+            "y": 432,
+            "w": 247,
+            "h": 247
+          },
+          "lines": 0
+        },
+        {
+          "selector": "span.mono-label",
+          "text": "SPECIMEN / CURRENT GROWTH",
+          "fontSizePx": 11.52,
+          "fontFamily": "ui-monospace",
+          "lineHeightPx": null,
+          "rect": {
+            "x": 37,
+            "y": 689,
+            "w": 207,
+            "h": 14
+          },
+          "lines": 1
+        },
+        {
+          "selector": "span.mono-label",
+          "text": "MODEL / SEEDED BRANCHING",
+          "fontSizePx": 11.52,
+          "fontFamily": "ui-monospace",
+          "lineHeightPx": null,
+          "rect": {
+            "x": 37,
+            "y": 723,
+            "w": 199,
+            "h": 14
+          },
+          "lines": 1
+        },
+        {
+          "selector": "p.eyebrow",
+          "text": "PLANT READING",
+          "fontSizePx": 11.52,
+          "fontFamily": "ui-monospace",
+          "lineHeightPx": null,
+          "rect": {
+            "x": 37,
+            "y": 781,
+            "w": 246,
+            "h": 14
+          },
+          "lines": 1
+        },
+        {
+          "selector": "h2",
+          "text": "Medium specimen",
+          "fontSizePx": 21.6,
+          "fontFamily": "\"Avenir Next\"",
+          "lineHeightPx": 22.7,
+          "rect": {
+            "x": 37,
+            "y": 807,
+            "w": 246,
+            "h": 23
+          },
+          "lines": 1
+        },
+        {
+          "selector": "p.reading-copy",
+          "text": "This stylized visual interpretation show",
+          "fontSizePx": 14.4,
+          "fontFamily": "\"Avenir Next\"",
+          "lineHeightPx": 22.3,
+          "rect": {
+            "x": 37,
+            "y": 845,
+            "w": 246,
+            "h": 89
+          },
+          "lines": 4
+        },
+        {
+          "selector": "p.reading-environment",
+          "text": "Humidity 55% · Sunlight 12 h · Soil pH 6",
+          "fontSizePx": 12.16,
+          "fontFamily": "ui-monospace",
+          "lineHeightPx": 18.2,
+          "rect": {
+            "x": 37,
+            "y": 951,
+            "w": 246,
+            "h": 36
+          },
+          "lines": 2
+        },
+        {
+          "selector": "dt",
+          "text": "Height",
+          "fontSizePx": 11.52,
+          "fontFamily": "ui-monospace",
+          "lineHeightPx": null,
+          "rect": {
+            "x": 37,
+            "y": 1014,
+            "w": 117,
+            "h": 14
+          },
+          "lines": 1
+        },
+        {
+          "selector": "dd",
+          "text": "medium",
+          "fontSizePx": 13.12,
+          "fontFamily": "ui-monospace",
+          "lineHeightPx": null,
+          "rect": {
+            "x": 37,
+            "y": 1034,
+            "w": 117,
+            "h": 15
+          },
+          "lines": 1
+        },
+        {
+          "selector": "dt",
+          "text": "Branching",
+          "fontSizePx": 11.52,
+          "fontFamily": "ui-monospace",
+          "lineHeightPx": null,
+          "rect": {
+            "x": 166,
+            "y": 1014,
+            "w": 117,
+            "h": 14
+          },
+          "lines": 1
+        },
+        {
+          "selector": "dd",
+          "text": "balanced",
+          "fontSizePx": 13.12,
+          "fontFamily": "ui-monospace",
+          "lineHeightPx": null,
+          "rect": {
+            "x": 166,
+            "y": 1034,
+            "w": 117,
+            "h": 15
+          },
+          "lines": 1
+        },
+        {
+          "selector": "dt",
+          "text": "Leaf density",
+          "fontSizePx": 11.52,
+          "fontFamily": "ui-monospace",
+          "lineHeightPx": null,
+          "rect": {
+            "x": 37,
+            "y": 1072,
+            "w": 117,
+            "h": 14
+          },
+          "lines": 1
+        },
+        {
+          "selector": "dd",
+          "text": "medium",
+          "fontSizePx": 13.12,
+          "fontFamily": "ui-monospace",
+          "lineHeightPx": null,
+          "rect": {
+            "x": 37,
+            "y": 1092,
+            "w": 117,
+            "h": 15
+          },
+          "lines": 1
+        },
+        {
+          "selector": "dt",
+          "text": "Lean",
+          "fontSizePx": 11.52,
+          "fontFamily": "ui-monospace",
+          "lineHeightPx": null,
+          "rect": {
+            "x": 166,
+            "y": 1072,
+            "w": 117,
+            "h": 14
+          },
+          "lines": 1
+        },
+        {
+          "selector": "dd",
+          "text": "upright (1°)",
+          "fontSizePx": 13.12,
+          "fontFamily": "ui-monospace",
+          "lineHeightPx": null,
+          "rect": {
+            "x": 166,
+            "y": 1092,
+            "w": 117,
+            "h": 15
+          },
+          "lines": 1
+        },
+        {
+          "selector": "p.eyebrow",
+          "text": "ENVIRONMENT",
+          "fontSizePx": 11.52,
+          "fontFamily": "ui-monospace",
+          "lineHeightPx": null,
+          "rect": {
+            "x": 37,
+            "y": 1173,
+            "w": 246,
+            "h": 14
+          },
+          "lines": 1
+        },
+        {
+          "selector": "h2",
+          "text": "Set the conditions",
+          "fontSizePx": 21.6,
+          "fontFamily": "\"Avenir Next\"",
+          "lineHeightPx": 22.7,
+          "rect": {
+            "x": 37,
+            "y": 1199,
+            "w": 246,
+            "h": 23
+          },
+          "lines": 1
+        },
+        {
+          "selector": "p",
+          "text": "Adjust the atmosphere, then grow a new s",
+          "fontSizePx": 14.4,
+          "fontFamily": "\"Avenir Next\"",
+          "lineHeightPx": 22.3,
+          "rect": {
+            "x": 37,
+            "y": 1238,
+            "w": 246,
+            "h": 45
+          },
+          "lines": 2
+        },
+        {
+          "selector": "label",
+          "text": "Humidity",
+          "fontSizePx": 14.4,
+          "fontFamily": "\"Avenir Next\"",
+          "lineHeightPx": null,
+          "rect": {
+            "x": 37,
+            "y": 1331,
+            "w": 59,
+            "h": 19
+          },
+          "lines": 1
+        },
+        {
+          "selector": "output",
+          "text": "55%",
+          "fontSizePx": 13.12,
+          "fontFamily": "ui-monospace",
+          "lineHeightPx": null,
+          "rect": {
+            "x": 259,
+            "y": 1333,
+            "w": 24,
+            "h": 15
+          },
+          "lines": 1
+        },
+        {
+          "selector": "span",
+          "text": "dry",
+          "fontSizePx": 11.52,
+          "fontFamily": "ui-monospace",
+          "lineHeightPx": null,
+          "rect": {
+            "x": 37,
+            "y": 1400,
+            "w": 24,
+            "h": 14
+          },
+          "lines": 1
+        },
+        {
+          "selector": "span",
+          "text": "wet",
+          "fontSizePx": 11.52,
+          "fontFamily": "ui-monospace",
+          "lineHeightPx": null,
+          "rect": {
+            "x": 259,
+            "y": 1400,
+            "w": 24,
+            "h": 14
+          },
+          "lines": 1
+        },
+        {
+          "selector": "label",
+          "text": "Sunlight hours",
+          "fontSizePx": 14.4,
+          "fontFamily": "\"Avenir Next\"",
+          "lineHeightPx": null,
+          "rect": {
+            "x": 37,
+            "y": 1463,
+            "w": 95,
+            "h": 19
+          },
+          "lines": 1
+        },
+        {
+          "selector": "output",
+          "text": "12 h",
+          "fontSizePx": 13.12,
+          "fontFamily": "ui-monospace",
+          "lineHeightPx": null,
+          "rect": {
+            "x": 252,
+            "y": 1465,
+            "w": 32,
+            "h": 15
+          },
+          "lines": 1
+        },
+        {
+          "selector": "span",
+          "text": "0 h",
+          "fontSizePx": 11.52,
+          "fontFamily": "ui-monospace",
+          "lineHeightPx": null,
+          "rect": {
+            "x": 37,
+            "y": 1532,
+            "w": 24,
+            "h": 14
+          },
+          "lines": 1
+        },
+        {
+          "selector": "span",
+          "text": "24 h",
+          "fontSizePx": 11.52,
+          "fontFamily": "ui-monospace",
+          "lineHeightPx": null,
+          "rect": {
+            "x": 252,
+            "y": 1532,
+            "w": 31,
+            "h": 14
+          },
+          "lines": 1
+        },
+        {
+          "selector": "label",
+          "text": "Soil acidity",
+          "fontSizePx": 14.4,
+          "fontFamily": "\"Avenir Next\"",
+          "lineHeightPx": null,
+          "rect": {
+            "x": 37,
+            "y": 1595,
+            "w": 71,
+            "h": 19
+          },
+          "lines": 1
+        },
+        {
+          "selector": "output",
+          "text": "pH 6.5",
+          "fontSizePx": 13.12,
+          "fontFamily": "ui-monospace",
+          "lineHeightPx": null,
+          "rect": {
+            "x": 236,
+            "y": 1597,
+            "w": 47,
+            "h": 15
+          },
+          "lines": 1
+        },
+        {
+          "selector": "span",
+          "text": "acidic",
+          "fontSizePx": 11.52,
+          "fontFamily": "ui-monospace",
+          "lineHeightPx": null,
+          "rect": {
+            "x": 37,
+            "y": 1664,
+            "w": 47,
+            "h": 14
+          },
+          "lines": 1
+        },
+        {
+          "selector": "span",
+          "text": "alkaline",
+          "fontSizePx": 11.52,
+          "fontFamily": "ui-monospace",
+          "lineHeightPx": null,
+          "rect": {
+            "x": 220,
+            "y": 1664,
+            "w": 63,
+            "h": 14
+          },
+          "lines": 1
+        },
+        {
+          "selector": "label",
+          "text": "Gravity",
+          "fontSizePx": 14.4,
+          "fontFamily": "\"Avenir Next\"",
+          "lineHeightPx": null,
+          "rect": {
+            "x": 37,
+            "y": 1727,
+            "w": 46,
+            "h": 19
+          },
+          "lines": 1
+        },
+        {
+          "selector": "output",
+          "text": "1.0 g",
+          "fontSizePx": 13.12,
+          "fontFamily": "ui-monospace",
+          "lineHeightPx": null,
+          "rect": {
+            "x": 244,
+            "y": 1729,
+            "w": 39,
+            "h": 15
+          },
+          "lines": 1
+        },
+        {
+          "selector": "span",
+          "text": "light",
+          "fontSizePx": 11.52,
+          "fontFamily": "ui-monospace",
+          "lineHeightPx": null,
+          "rect": {
+            "x": 37,
+            "y": 1796,
+            "w": 39,
+            "h": 14
+          },
+          "lines": 1
+        },
+        {
+          "selector": "span",
+          "text": "heavy",
+          "fontSizePx": 11.52,
+          "fontFamily": "ui-monospace",
+          "lineHeightPx": null,
+          "rect": {
+            "x": 244,
+            "y": 1796,
+            "w": 39,
+            "h": 14
+          },
+          "lines": 1
+        },
+        {
+          "selector": "button.primary-action",
+          "text": "Grow plant ↗",
+          "fontSizePx": 16,
+          "fontFamily": "\"Avenir Next\"",
+          "lineHeightPx": null,
+          "rect": {
+            "x": 37,
+            "y": 1859,
+            "w": 246,
+            "h": 48
+          },
+          "lines": 1
+        },
+        {
+          "selector": "span",
+          "text": "↗",
+          "fontSizePx": 16,
+          "fontFamily": "\"Avenir Next\"",
+          "lineHeightPx": null,
+          "rect": {
+            "x": 254,
+            "y": 1872,
+            "w": 12,
+            "h": 22
+          },
+          "lines": 1
+        },
+        {
+          "selector": "button.secondary-action",
+          "text": "Reset defaults",
+          "fontSizePx": 16,
+          "fontFamily": "\"Avenir Next\"",
+          "lineHeightPx": null,
+          "rect": {
+            "x": 37,
+            "y": 1917,
+            "w": 246,
+            "h": 48
+          },
+          "lines": 1
+        },
+        {
+          "selector": "p.status-message",
+          "text": "Ready to grow a new specimen.",
+          "fontSizePx": 12.16,
+          "fontFamily": "\"Avenir Next\"",
+          "lineHeightPx": 17,
+          "rect": {
+            "x": 37,
+            "y": 1977,
+            "w": 246,
+            "h": 17
+          },
+          "lines": 1
+        }
+      ]
+    }
+  }
+}

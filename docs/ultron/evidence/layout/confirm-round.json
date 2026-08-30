@@ -1,0 +1,16 @@
+{
+  "mid800": {
+    "chamberH": 854,
+    "railH": 854,
+    "concludeTogether": true,
+    "stripH": 181,
+    "pageH": 1324
+  },
+  "desktop1440": {
+    "chamberH": 908,
+    "railH": 908,
+    "concludeTogether": true,
+    "stripH": 164,
+    "pageH": 1442
+  }
+}

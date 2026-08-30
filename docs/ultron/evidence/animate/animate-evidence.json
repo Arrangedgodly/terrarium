@@ -1,0 +1,89 @@
+{
+  "base": "http://127.0.0.1:5195",
+  "capturedAt": "2026-08-30T06:11:57.052Z",
+  "sequences": {
+    "desktopGrow": {
+      "frames": [
+        {
+          "targetMs": 16,
+          "atMs": 20
+        },
+        {
+          "targetMs": 150,
+          "atMs": 154
+        },
+        {
+          "targetMs": 300,
+          "atMs": 304
+        },
+        {
+          "targetMs": 450,
+          "atMs": 454
+        },
+        {
+          "targetMs": 640,
+          "atMs": 653
+        }
+      ],
+      "seed": "1408721277",
+      "ariaLabel": "A generated plant with medium height, balanced branching, medium leaf density, and an upright posture (1°). Environment: Humidity 55% · Sunlight 12 h · Soil pH 6.5 · Gravity 1.0 g.",
+      "rafPlateau": {
+        "first": 77,
+        "second": 77,
+        "terminated": true
+      }
+    },
+    "reducedMotion": {
+      "identicalAt200msAndSettled": true,
+      "rafCountDuringGrow": 0,
+      "seed": "1408721277"
+    },
+    "restartSafety": {
+      "doubleGrow": {
+        "seed": "3488066261",
+        "rafTerminated": true,
+        "rafCounts": [
+          43,
+          43
+        ]
+      },
+      "resetDuringGrow": {
+        "seed": "1592594996",
+        "settledMatchesStaticRedraw": true,
+        "vsInitialDefault": {
+          "totalPx": 343396,
+          "differing": 1171,
+          "differingRatio": 0.0034100571934443033,
+          "maxDelta": 12
+        },
+        "statusMessage": "Defaults restored. Baseline specimen grown."
+      }
+    },
+    "mobileGrow": {
+      "frames": [
+        {
+          "targetMs": 16,
+          "atMs": 32
+        },
+        {
+          "targetMs": 150,
+          "atMs": 165
+        },
+        {
+          "targetMs": 300,
+          "atMs": 315
+        },
+        {
+          "targetMs": 450,
+          "atMs": 466
+        },
+        {
+          "targetMs": 640,
+          "atMs": 649
+        }
+      ],
+      "seed": "1408721277"
+    }
+  },
+  "consoleErrors": []
+}

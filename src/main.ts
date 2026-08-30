@@ -7,7 +7,9 @@ import {
   DEFAULT_ENVIRONMENT,
   DEFAULT_SEED,
   buildPlantReading,
+  formatSpecimenSeed,
   nextSeed,
+  rememberSpecimen,
   type ControlKey,
 } from "./terrarium-state.ts";
 
@@ -40,6 +42,7 @@ const growButton = required<HTMLButtonElement>('[data-action="grow"]');
 const resetButton = required<HTMLButtonElement>('[data-action="reset"]');
 const statusMessage = required<HTMLElement>("#status-message");
 const statusTag = required<HTMLElement>(".status-tag");
+const specimenSeedLabel = required<HTMLElement>('[data-specimen="seed"]');
 const readingTitle = required<HTMLElement>('[data-reading="title"]');
 const readingCopy = required<HTMLElement>('[data-reading="copy"]');
 const readingEnvironment = required<HTMLElement>('[data-reading="environment"]');
@@ -119,10 +122,20 @@ function updateReading(environment: Environment, plant: Plant): void {
 
 let currentSeed = DEFAULT_SEED;
 let currentPlant = generatePlant(DEFAULT_ENVIRONMENT, currentSeed);
+// Session-only specimen memory: the chamber's ghost history. It lives in this
+// module's state alone — never storage — so a reload returns the instrument to
+// its empty baseline. Reset restores the default specimen but keeps the memory:
+// the session's comparisons survive, only the page reload forgets.
+let specimenHistory: Plant[] = [];
 const renderer = createPlantCanvasRenderer(canvas, currentPlant);
+
+function updateSpecimenSeed(seed: number): void {
+  specimenSeedLabel.textContent = `SPECIMEN / ${formatSpecimenSeed(seed)}`;
+}
 
 applyEnvironment(DEFAULT_ENVIRONMENT);
 updateReading(DEFAULT_ENVIRONMENT, currentPlant);
+updateSpecimenSeed(currentSeed);
 setStatus("Ready to grow a new specimen.", "ready");
 
 function renderNextPlant(
@@ -135,9 +148,12 @@ function renderNextPlant(
 
   try {
     const nextPlant = generatePlant(environment, seed);
-    renderer.setPlant(nextPlant);
+    specimenHistory = rememberSpecimen(specimenHistory, currentPlant);
+    renderer.setGhosts(specimenHistory);
+    renderer.growPlant(nextPlant);
     currentSeed = seed;
     currentPlant = nextPlant;
+    updateSpecimenSeed(seed);
     updateReading(environment, currentPlant);
     setStatus(successMessage, successState);
     return true;

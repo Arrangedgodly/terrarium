@@ -29,6 +29,7 @@ export interface Leaf {
   size: number;
   width: number;
   depth: number;
+  bud: boolean;
 }
 
 export interface PlantPalette {
@@ -121,8 +122,13 @@ function clampPoint(point: Point, viewport: Viewport, margin: number): Point {
   };
 }
 
+// Label bands sit between the environments the instrument actually produces:
+// height spans ~0.2–0.84 of the chamber as sunlight sweeps 0–24 h (default 12 h
+// lands mid-scale), leaf and branch counts step with humidity (~23/49/96 leaves
+// and ~31/63/125 segments at dry/default/wet), so each word names the plant's
+// real position in that range rather than an abstract midpoint.
 function getHeightLabel(heightRatio: number): PlantTraits["heightLabel"] {
-  if (heightRatio >= 0.56) return "tall";
+  if (heightRatio >= 0.68) return "tall";
   if (heightRatio >= 0.34) return "medium";
   return "short";
 }
@@ -134,8 +140,8 @@ function getBranchingLabel(branchCount: number): PlantTraits["branchingLabel"] {
 }
 
 function getLeafDensityLabel(leafCount: number): PlantTraits["leafDensityLabel"] {
-  if (leafCount >= 48) return "lush";
-  if (leafCount >= 24) return "medium";
+  if (leafCount >= 72) return "lush";
+  if (leafCount >= 34) return "medium";
   return "light";
 }
 
@@ -146,16 +152,21 @@ function getLeanLabel(leanDegrees: number): PlantTraits["leanLabel"] {
 }
 
 function createPalette(environment: NormalizedEnvironment, random: () => number): PlantPalette {
-  const acidityHue = 92 + (environment.acidity - 0.5) * 54;
-  const seedShift = (random() - 0.5) * 8;
-  const leafHue = Math.round(acidityHue + seedShift);
-  const stemHue = Math.round(34 + environment.humidity * 22 + seedShift * 0.4);
-  const accentHue = Math.round(23 + environment.sunlight * 26 + seedShift);
+  const seedShift = (random() - 0.5) * 14;
+  const leafHue = Math.round(86 + (environment.acidity - 0.5) * 88 + seedShift);
+  const stemHue = Math.round(28 + environment.humidity * 34 + seedShift * 0.4);
+  const accentHue = Math.round(16 + environment.sunlight * 46 + seedShift);
 
   return {
-    stem: `hsl(${stemHue} 31% 38%)`,
-    leaf: `hsl(${leafHue} 46% 48%)`,
-    accent: `hsl(${accentHue} 72% 65%)`,
+    stem: `hsl(${stemHue} ${Math.round(34 + environment.humidity * 14)}% ${Math.round(
+      36 + environment.humidity * 7,
+    )}%)`,
+    leaf: `hsl(${leafHue} ${Math.round(46 + environment.humidity * 10)}% ${Math.round(
+      44 + environment.sunlight * 8,
+    )}%)`,
+    accent: `hsl(${accentHue} ${Math.round(72 + environment.sunlight * 10)}% ${Math.round(
+      61 + environment.sunlight * 7,
+    )}%)`,
     ground: `hsl(${Math.round(28 + environment.acidity * 18)} 24% 18%)`,
   };
 }
@@ -178,23 +189,25 @@ export function generatePlant(
     x: normalizedViewport.width / 2,
     y: normalizedViewport.height * 0.86,
   };
-  const rootLength = scale * (0.18 + normalizedEnvironment.sunlight * 0.32);
+  const rootLength = scale * (0.08 + normalizedEnvironment.sunlight * 0.2);
   const rootAngle =
     (normalizedEnvironment.gravity - 0.5) * 0.65 + (random() - 0.5) * 0.1;
-  const branchSpread = 0.24 + normalizedEnvironment.humidity * 0.38;
+  const branchSpread = 0.28 + normalizedEnvironment.humidity * 0.4;
   const leafAspect = 0.72 + normalizedEnvironment.acidity * 0.68;
-  const baseLeafSize = scale * (0.018 + normalizedEnvironment.humidity * 0.013);
+  const baseLeafSize = scale * (0.03 + normalizedEnvironment.humidity * 0.02);
+  const budChance = 0.1 + normalizedEnvironment.sunlight * 0.28;
 
-  const addLeaf = (position: Point, angle: number, depth: number): void => {
+  const addLeaf = (position: Point, angle: number, depth: number, sizeFactor: number): void => {
     if (leaves.length >= MAX_LEAVES) return;
 
-    const size = baseLeafSize * (0.72 + random() * 0.56);
+    const size = baseLeafSize * sizeFactor * (0.78 + random() * 0.62);
     leaves.push({
       position,
       angle,
       size,
       width: size * leafAspect,
       depth,
+      bud: random() < budChance,
     });
   };
 
@@ -214,17 +227,21 @@ export function generatePlant(
       normalizedViewport,
       margin,
     );
-    const endWidth = Math.max(0.7, startWidth * (0.68 - depth * 0.025));
+    const endWidth = Math.max(1.5, startWidth * (0.74 - depth * 0.018));
 
     segments.push({ from, to, startWidth, endWidth, depth });
 
     if (depth >= maxDepth || segments.length >= MAX_SEGMENTS - 2) {
-      addLeaf(to, segmentAngle + (random() - 0.5) * 0.4, depth);
+      addLeaf(to, segmentAngle + (random() - 0.5) * 0.4, depth, 1);
       return;
     }
 
+    if (depth >= 1 && random() < 0.55) {
+      addLeaf(to, segmentAngle + (random() - 0.5) * 0.7, depth, 0.72);
+    }
+
     const decay =
-      0.62 + normalizedEnvironment.sunlight * 0.12 - normalizedEnvironment.gravity * 0.06;
+      0.7 + normalizedEnvironment.sunlight * 0.12 - normalizedEnvironment.gravity * 0.06;
     const nextLength = safeLength * decay;
     const leftAngle = segmentAngle - branchSpread * (0.78 + random() * 0.18);
     const rightAngle = segmentAngle + branchSpread * (0.78 + random() * 0.18);
@@ -234,7 +251,7 @@ export function generatePlant(
     grow(to, rightAngle, nextLength * (0.96 + random() * 0.08), depth + 1, nextWidth);
   };
 
-  grow(root, rootAngle, rootLength, 0, Math.max(2.4, scale * 0.016));
+  grow(root, rootAngle, rootLength, 0, Math.max(4, scale * 0.028));
 
   const firstSegment = segments[0];
   const highestY = segments.reduce(
@@ -242,9 +259,21 @@ export function generatePlant(
     root.y,
   );
   const heightRatio = clamp((root.y - highestY) / normalizedViewport.height, 0, 1);
+  // Lean reads the posture the eye sees: the angle from vertical of the line
+  // from root to the canopy's visual center (leaves and branch tips). The
+  // trunk alone understates heavy-gravity plants, whose crowns droop further
+  // than the first segment tilts.
+  const canopyAnchors = [
+    ...leaves.map((leaf) => leaf.position),
+    ...segments.map((segment) => segment.to),
+  ];
   const leanDegrees = firstSegment
     ? clamp(
-        (Math.atan2(firstSegment.to.x - firstSegment.from.x, firstSegment.from.y - firstSegment.to.y) *
+        (Math.atan2(
+          canopyAnchors.reduce((total, point) => total + point.x, 0) / canopyAnchors.length -
+            root.x,
+          root.y - canopyAnchors.reduce((total, point) => total + point.y, 0) / canopyAnchors.length,
+        ) *
           180) /
           Math.PI,
         -90,
